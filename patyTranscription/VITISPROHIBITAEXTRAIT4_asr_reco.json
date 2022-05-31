@@ -1,0 +1,833 @@
+{
+  "confidence-score": 0.81830894947052,
+  "speakers": [
+    {
+      "end": 35.55,
+      "speaker_id": "spk1",
+      "start": 0.090133,
+      "words": [
+        {
+          "conf": 0.747905,
+          "end": 0.33,
+          "start": 0.090133,
+          "word": "la"
+        },
+        {
+          "conf": 0.998998,
+          "end": 1.08,
+          "start": 0.360724,
+          "word": "surproduction"
+        },
+        {
+          "conf": 0.511518,
+          "end": 1.829983,
+          "start": 1.08005,
+          "word": "ph\u00e9nom\u00e9nal"
+        },
+        {
+          "conf": 0.766136,
+          "end": 2.220016,
+          "start": 1.829983,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.994318,
+          "end": 2.28,
+          "start": 2.220016,
+          "word": "c'"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.46,
+          "start": 2.28,
+          "word": "est-\u00e0-dire"
+        },
+        {
+          "conf": 0.953971,
+          "end": 2.549976,
+          "start": 2.46,
+          "word": "qu'"
+        },
+        {
+          "conf": 0.996731,
+          "end": 2.61,
+          "start": 2.55,
+          "word": "on"
+        },
+        {
+          "conf": 0.908272,
+          "end": 2.699979,
+          "start": 2.610049,
+          "word": "a"
+        },
+        {
+          "conf": 0.997542,
+          "end": 2.759889,
+          "start": 2.699979,
+          "word": "en"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.88,
+          "start": 2.76,
+          "word": "mille"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.0,
+          "start": 2.88,
+          "word": "neuf"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.12,
+          "start": 3.0,
+          "word": "cent"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.57,
+          "start": 3.12,
+          "word": "trente-quatre"
+        },
+        {
+          "conf": 0.686615,
+          "end": 3.626813,
+          "start": 3.570076,
+          "word": "il"
+        },
+        {
+          "conf": 0.831517,
+          "end": 3.660058,
+          "start": 3.626813,
+          "word": "y"
+        },
+        {
+          "conf": 0.830172,
+          "end": 3.690054,
+          "start": 3.660058,
+          "word": "a"
+        },
+        {
+          "conf": 0.998579,
+          "end": 4.08,
+          "start": 3.690133,
+          "word": "trente-six"
+        },
+        {
+          "conf": 0.99802,
+          "end": 4.32,
+          "start": 4.08,
+          "word": "millions"
+        },
+        {
+          "conf": 0.999696,
+          "end": 4.41,
+          "start": 4.32,
+          "word": "de"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.86,
+          "start": 4.41,
+          "word": "fran\u00e7ais"
+        },
+        {
+          "conf": 0.898808,
+          "end": 5.290477,
+          "start": 4.888405,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.829026,
+          "end": 5.43,
+          "start": 5.31,
+          "word": "et"
+        },
+        {
+          "conf": 0.999372,
+          "end": 6.33,
+          "start": 5.430362,
+          "word": "quatre-vingt-onze"
+        },
+        {
+          "conf": 0.993103,
+          "end": 6.78,
+          "start": 6.33,
+          "word": "millions"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.87,
+          "start": 6.78,
+          "word": "d'"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.35,
+          "start": 6.87,
+          "word": "hectolitres"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.53,
+          "start": 7.38,
+          "word": "de"
+        },
+        {
+          "conf": 0.788909,
+          "end": 7.77,
+          "start": 7.53,
+          "word": "vin"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.92,
+          "start": 7.83,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.34,
+          "start": 7.92,
+          "word": "boire"
+        },
+        {
+          "conf": 0.727784,
+          "end": 8.959872,
+          "start": 8.369494,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.79472,
+          "end": 9.119893,
+          "start": 8.97,
+          "word": "on"
+        },
+        {
+          "conf": 0.994115,
+          "end": 9.24,
+          "start": 9.119893,
+          "word": "en"
+        },
+        {
+          "conf": 0.957934,
+          "end": 9.63,
+          "start": 9.240163,
+          "word": "est-il"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.69,
+          "start": 9.630173,
+          "word": "un"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.87,
+          "start": 9.69,
+          "word": "petit"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.02,
+          "start": 9.87,
+          "word": "peu"
+        },
+        {
+          "conf": 0.999325,
+          "end": 10.17,
+          "start": 10.020013,
+          "word": "mais"
+        },
+        {
+          "conf": 0.918085,
+          "end": 10.49979,
+          "start": 10.32,
+          "word": "enfin"
+        },
+        {
+          "conf": 0.288756,
+          "end": 10.678047,
+          "start": 10.63654,
+          "word": "en"
+        },
+        {
+          "conf": 0.833373,
+          "end": 10.739621,
+          "start": 10.694812,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.01,
+          "start": 10.740022,
+          "word": "vraiment"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.31,
+          "start": 11.01,
+          "word": "beaucoup"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.58,
+          "start": 11.31,
+          "word": "beaucoup"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.85,
+          "start": 11.58,
+          "word": "beaucoup"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.15,
+          "start": 11.85,
+          "word": "trop"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.84,
+          "start": 12.269482,
+          "word": "vingt-quatre"
+        },
+        {
+          "conf": 0.995753,
+          "end": 13.439751,
+          "start": 12.84,
+          "word": "d\u00e9cembre"
+        },
+        {
+          "conf": 0.773818,
+          "end": 13.889431,
+          "start": 13.470171,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.923182,
+          "end": 14.294773,
+          "start": 13.980248,
+          "word": "le"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.52,
+          "start": 14.312184,
+          "word": "le"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.21,
+          "start": 14.52,
+          "word": "parlement"
+        },
+        {
+          "conf": 0.974827,
+          "end": 15.39,
+          "start": 15.21,
+          "word": "se"
+        },
+        {
+          "conf": 0.972615,
+          "end": 15.959967,
+          "start": 15.39,
+          "word": "r\u00e9unit"
+        },
+        {
+          "conf": 0.764864,
+          "end": 16.230293,
+          "start": 15.96,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.823137,
+          "end": 16.32,
+          "start": 16.230293,
+          "word": "y"
+        },
+        {
+          "conf": 0.825185,
+          "end": 16.919987,
+          "start": 16.320328,
+          "word": "discuter"
+        },
+        {
+          "conf": 0.98948,
+          "end": 16.979654,
+          "start": 16.92,
+          "word": "de"
+        },
+        {
+          "conf": 0.987693,
+          "end": 17.01,
+          "start": 16.979654,
+          "word": "l'"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.37,
+          "start": 17.010374,
+          "word": "alcool"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.46,
+          "start": 17.37,
+          "word": "de"
+        },
+        {
+          "conf": 0.954503,
+          "end": 18.000667,
+          "start": 17.46,
+          "word": "betterave"
+        },
+        {
+          "conf": 0.84971,
+          "end": 18.089063,
+          "start": 18.000667,
+          "word": "en"
+        },
+        {
+          "conf": 0.97467,
+          "end": 18.72,
+          "start": 18.089063,
+          "word": "r\u00e9alit\u00e9"
+        },
+        {
+          "conf": 0.908245,
+          "end": 19.169713,
+          "start": 18.720436,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.710963,
+          "end": 19.529921,
+          "start": 19.17,
+          "word": "des"
+        },
+        {
+          "conf": 0.645328,
+          "end": 19.82818,
+          "start": 19.529921,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.991057,
+          "end": 19.98,
+          "start": 19.83,
+          "word": "en"
+        },
+        {
+          "conf": 0.991581,
+          "end": 20.22,
+          "start": 19.98,
+          "word": "fin"
+        },
+        {
+          "conf": 0.993713,
+          "end": 20.28,
+          "start": 20.22,
+          "word": "de"
+        },
+        {
+          "conf": 0.998389,
+          "end": 20.82,
+          "start": 20.309934,
+          "word": "s\u00e9ance"
+        },
+        {
+          "conf": 0.999438,
+          "end": 21.03,
+          "start": 20.820643,
+          "word": "comme"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.57,
+          "start": 21.03,
+          "word": "toujours"
+        },
+        {
+          "conf": 0.933587,
+          "end": 22.252216,
+          "start": 21.840526,
+          "word": "aujourd'hui"
+        },
+        {
+          "conf": 0.420881,
+          "end": 22.649564,
+          "start": 22.263492,
+          "word": "vous"
+        },
+        {
+          "conf": 0.860151,
+          "end": 23.007112,
+          "start": 22.737118,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.988122,
+          "end": 23.069337,
+          "start": 23.009337,
+          "word": "il"
+        },
+        {
+          "conf": 0.969821,
+          "end": 23.31,
+          "start": 23.069722,
+          "word": "faudrait"
+        },
+        {
+          "conf": 0.99121,
+          "end": 23.58,
+          "start": 23.37,
+          "word": "peut-\u00eatre"
+        },
+        {
+          "conf": 0.974202,
+          "end": 24.09,
+          "start": 23.60998,
+          "word": "penser"
+        },
+        {
+          "conf": 0.956288,
+          "end": 24.26981,
+          "start": 24.09,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 0.933508,
+          "end": 24.601434,
+          "start": 24.275321,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.268447,
+          "end": 24.899859,
+          "start": 24.601434,
+          "word": "julia"
+        },
+        {
+          "conf": 0.776243,
+          "end": 25.77,
+          "start": 25.139064,
+          "word": "production"
+        },
+        {
+          "conf": 0.953057,
+          "end": 25.83,
+          "start": 25.770037,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 0.999121,
+          "end": 26.07,
+          "start": 25.83032,
+          "word": "faire"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.28,
+          "start": 26.07,
+          "word": "une"
+        },
+        {
+          "conf": 0.991287,
+          "end": 26.550209,
+          "start": 26.28,
+          "word": "liste"
+        },
+        {
+          "conf": 0.999426,
+          "end": 26.76,
+          "start": 26.610103,
+          "word": "de"
+        },
+        {
+          "conf": 0.383427,
+          "end": 27.39,
+          "start": 26.760015,
+          "word": "c\u00e9pages"
+        },
+        {
+          "conf": 0.95947,
+          "end": 27.719676,
+          "start": 27.390132,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.584275,
+          "end": 28.588694,
+          "start": 27.719676,
+          "word": "renouvelables"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.98,
+          "start": 28.59965,
+          "word": "ailleurs"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.520015,
+          "start": 29.34,
+          "word": "je"
+        },
+        {
+          "conf": 0.998921,
+          "end": 29.67,
+          "start": 29.520015,
+          "word": "ne"
+        },
+        {
+          "conf": 0.995441,
+          "end": 29.91,
+          "start": 29.67,
+          "word": "sais"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.21,
+          "start": 29.94,
+          "word": "pas"
+        },
+        {
+          "conf": 0.981051,
+          "end": 30.48,
+          "start": 30.21,
+          "word": "quel"
+        },
+        {
+          "conf": 0.998471,
+          "end": 30.54,
+          "start": 30.48,
+          "word": "est"
+        },
+        {
+          "conf": 0.99803,
+          "end": 30.63,
+          "start": 30.54,
+          "word": "le"
+        },
+        {
+          "conf": 0.988085,
+          "end": 31.2,
+          "start": 30.630013,
+          "word": "crit\u00e8re"
+        },
+        {
+          "conf": 0.986716,
+          "end": 31.769817,
+          "start": 31.2,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.918638,
+          "end": 31.918835,
+          "start": 31.770436,
+          "word": "le"
+        },
+        {
+          "conf": 0.930095,
+          "end": 32.28,
+          "start": 31.918835,
+          "word": "journal"
+        },
+        {
+          "conf": 0.954187,
+          "end": 32.88,
+          "start": 32.28,
+          "word": "officiel"
+        },
+        {
+          "conf": 0.913179,
+          "end": 33.15,
+          "start": 32.88,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.884308,
+          "end": 33.389941,
+          "start": 33.15,
+          "word": "donne"
+        },
+        {
+          "conf": 0.972872,
+          "end": 33.509985,
+          "start": 33.389941,
+          "word": "le"
+        },
+        {
+          "conf": 0.96698,
+          "end": 34.019813,
+          "start": 33.51,
+          "word": "r\u00e9sultat"
+        },
+        {
+          "conf": 0.751351,
+          "end": 34.139187,
+          "start": 34.02,
+          "word": "mais"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.29,
+          "start": 34.140374,
+          "word": "ne"
+        },
+        {
+          "conf": 0.720424,
+          "end": 34.47,
+          "start": 34.29,
+          "word": "dit"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.65,
+          "start": 34.47,
+          "word": "pas"
+        },
+        {
+          "conf": 0.994269,
+          "end": 34.77,
+          "start": 34.650022,
+          "word": "les"
+        },
+        {
+          "conf": 0.996142,
+          "end": 35.55,
+          "start": 34.770015,
+          "word": "discussions"
+        }
+      ]
+    },
+    {
+      "end": 39.610093,
+      "speaker_id": "spk2",
+      "start": 35.55,
+      "words": [
+        {
+          "conf": 1.0,
+          "end": 39.610093,
+          "start": 35.55,
+          "word": "<unk>"
+        }
+      ]
+    },
+    {
+      "end": 43.10959,
+      "speaker_id": "spk3",
+      "start": 39.630062,
+      "words": [
+        {
+          "conf": 0.999401,
+          "end": 39.75,
+          "start": 39.630062,
+          "word": "un"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.96,
+          "start": 39.75,
+          "word": "mois"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.11,
+          "start": 39.96,
+          "word": "plus"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.47,
+          "start": 40.11,
+          "word": "tard"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.62,
+          "start": 40.470018,
+          "word": "la"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.89,
+          "start": 40.62,
+          "word": "liste"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.46,
+          "start": 40.89,
+          "word": "officielle"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.61,
+          "start": 41.46,
+          "word": "des"
+        },
+        {
+          "conf": 0.998682,
+          "end": 42.03,
+          "start": 41.61,
+          "word": "c\u00e9pages"
+        },
+        {
+          "conf": 0.911231,
+          "end": 42.540062,
+          "start": 42.03,
+          "word": "interdits"
+        },
+        {
+          "conf": 0.768333,
+          "end": 42.63,
+          "start": 42.540062,
+          "word": "et"
+        },
+        {
+          "conf": 0.475702,
+          "end": 43.10959,
+          "start": 42.63,
+          "word": "publie"
+        }
+      ]
+    },
+    {
+      "end": 52.090276,
+      "speaker_id": "spk4",
+      "start": 43.181184,
+      "words": [
+        {
+          "conf": 0.819292,
+          "end": 52.090276,
+          "start": 43.181184,
+          "word": "<unk>"
+        }
+      ]
+    },
+    {
+      "end": 56.817297,
+      "speaker_id": "spk5",
+      "start": 52.090276,
+      "words": [
+        {
+          "conf": 1.0,
+          "end": 56.817297,
+          "start": 52.090276,
+          "word": "<unk>"
+        }
+      ]
+    }
+  ],
+  "text": [
+    "spk1 : la surproduction ph\u00e9nom\u00e9nal c'est-\u00e0-dire qu'on a en mille neuf cent trente-quatre il y a trente-six millions de fran\u00e7ais et quatre-vingt-onze millions d'hectolitres de vin \u00e0 boire on en est-il un petit peu mais enfin en a vraiment beaucoup beaucoup beaucoup trop vingt-quatre d\u00e9cembre le le parlement se r\u00e9unit y discuter de l'alcool de betterave en r\u00e9alit\u00e9 des en fin de s\u00e9ance comme toujours aujourd'hui vous il faudrait peut-\u00eatre penser \u00e0 julia production \u00e0 faire une liste de c\u00e9pages renouvelables ailleurs je ne sais pas quel est le crit\u00e8re le journal officiel donne le r\u00e9sultat mais ne dit pas les discussions",
+    "spk2 : ",
+    "spk3 : un mois plus tard la liste officielle des c\u00e9pages interdits et publie",
+    "spk4 : ",
+    "spk5 : "
+  ]
+}

@@ -1,0 +1,1875 @@
+{
+  "confidence-score": 0.8982864618301392,
+  "speakers": [
+    {
+      "end": 17.43,
+      "speaker_id": "spk1",
+      "start": 0.12,
+      "words": [
+        {
+          "conf": 1.0,
+          "end": 0.39,
+          "start": 0.12,
+          "word": "c'"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.51,
+          "start": 0.39,
+          "word": "est"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.6,
+          "start": 0.51,
+          "word": "un"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.02,
+          "start": 0.6,
+          "word": "signal"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.08,
+          "start": 1.02,
+          "word": "d'"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.5,
+          "start": 1.08,
+          "word": "alarme"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.65,
+          "start": 1.5,
+          "word": "que"
+        },
+        {
+          "conf": 0.769735,
+          "end": 2.039522,
+          "start": 1.65,
+          "word": "lance"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.49,
+          "start": 2.07,
+          "word": "xavier"
+        },
+        {
+          "conf": 0.599124,
+          "end": 2.88,
+          "start": 2.490358,
+          "word": "plantys"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.0,
+          "start": 2.880269,
+          "word": "le"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.48,
+          "start": 3.0,
+          "word": "pr\u00e9sident"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.600015,
+          "start": 3.48,
+          "word": "de"
+        },
+        {
+          "conf": 0.92616,
+          "end": 3.66,
+          "start": 3.600015,
+          "word": "l'"
+        },
+        {
+          "conf": 0.68177,
+          "end": 4.05,
+          "start": 3.66,
+          "word": "obliger"
+        },
+        {
+          "conf": 0.993742,
+          "end": 4.62,
+          "start": 4.050259,
+          "word": "sauternes"
+        },
+        {
+          "conf": 0.870485,
+          "end": 4.800012,
+          "start": 4.71,
+          "word": "et"
+        },
+        {
+          "conf": 0.722981,
+          "end": 5.64,
+          "start": 4.800012,
+          "word": "copropri\u00e9taire"
+        },
+        {
+          "conf": 0.736977,
+          "end": 5.76,
+          "start": 5.64,
+          "word": "du"
+        },
+        {
+          "conf": 0.997085,
+          "end": 6.03,
+          "start": 5.76,
+          "word": "ch\u00e2teau"
+        },
+        {
+          "conf": 0.999339,
+          "end": 6.48,
+          "start": 6.030013,
+          "word": "guiraud"
+        },
+        {
+          "conf": 0.947421,
+          "end": 6.899848,
+          "start": 6.480011,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.82639,
+          "end": 7.2,
+          "start": 6.957599,
+          "word": "aller"
+        },
+        {
+          "conf": 0.984396,
+          "end": 7.38,
+          "start": 7.2,
+          "word": "vers"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.5,
+          "start": 7.380051,
+          "word": "des"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.98,
+          "start": 7.5,
+          "word": "c\u00e9pages"
+        },
+        {
+          "conf": 0.999428,
+          "end": 8.58,
+          "start": 8.04,
+          "word": "hybrides"
+        },
+        {
+          "conf": 0.747043,
+          "end": 9.3,
+          "start": 8.64,
+          "word": "r\u00e9sistants"
+        },
+        {
+          "conf": 0.928419,
+          "end": 9.658416,
+          "start": 9.51,
+          "word": "c'"
+        },
+        {
+          "conf": 0.989769,
+          "end": 9.69,
+          "start": 9.658416,
+          "word": "est"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.87,
+          "start": 9.69,
+          "word": "pour"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.05,
+          "start": 9.87,
+          "word": "lui"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.14,
+          "start": 10.050013,
+          "word": "une"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.56,
+          "start": 10.14,
+          "word": "perte"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.65,
+          "start": 10.56,
+          "word": "d'"
+        },
+        {
+          "conf": 0.999704,
+          "end": 11.16,
+          "start": 10.65,
+          "word": "identit\u00e9"
+        },
+        {
+          "conf": 0.999001,
+          "end": 11.31,
+          "start": 11.16,
+          "word": "des"
+        },
+        {
+          "conf": 0.798195,
+          "end": 11.61,
+          "start": 11.31,
+          "word": "vins"
+        },
+        {
+          "conf": 0.925884,
+          "end": 11.908846,
+          "start": 11.61,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.992716,
+          "end": 12.18,
+          "start": 11.908846,
+          "word": "cela"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.42,
+          "start": 12.18,
+          "word": "va"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.63,
+          "start": 12.48,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.69,
+          "start": 12.63,
+          "word": "l'"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.26,
+          "start": 12.69,
+          "word": "encontre"
+        },
+        {
+          "conf": 0.978821,
+          "end": 13.5,
+          "start": 13.26,
+          "word": "des"
+        },
+        {
+          "conf": 0.996673,
+          "end": 13.59,
+          "start": 13.5,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.01,
+          "start": 13.590018,
+          "word": "aussi"
+        },
+        {
+          "conf": 0.983155,
+          "end": 14.43,
+          "start": 14.07,
+          "word": "cr\u00e9\u00e9"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.61,
+          "start": 14.43,
+          "word": "par"
+        },
+        {
+          "conf": 0.986834,
+          "end": 14.73,
+          "start": 14.61,
+          "word": "les"
+        },
+        {
+          "conf": 0.997583,
+          "end": 15.27,
+          "start": 14.73,
+          "word": "vignerons"
+        },
+        {
+          "conf": 0.96394,
+          "end": 15.39,
+          "start": 15.27,
+          "word": "et"
+        },
+        {
+          "conf": 0.924122,
+          "end": 15.99,
+          "start": 15.39,
+          "word": "syndicats"
+        },
+        {
+          "conf": 0.992334,
+          "end": 16.439112,
+          "start": 16.26,
+          "word": "il"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.5,
+          "start": 16.439112,
+          "word": "y"
+        },
+        {
+          "conf": 0.993433,
+          "end": 16.56,
+          "start": 16.5,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.71,
+          "start": 16.560179,
+          "word": "plus"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.8,
+          "start": 16.71,
+          "word": "de"
+        },
+        {
+          "conf": 0.991571,
+          "end": 17.19,
+          "start": 16.8,
+          "word": "quatre-vingts"
+        },
+        {
+          "conf": 0.998708,
+          "end": 17.43,
+          "start": 17.19,
+          "word": "ans"
+        }
+      ]
+    },
+    {
+      "end": 21.51,
+      "speaker_id": "spk2",
+      "start": 18.030216,
+      "words": [
+        {
+          "conf": 0.961827,
+          "end": 18.299868,
+          "start": 18.030216,
+          "word": "quand"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.6,
+          "start": 18.446144,
+          "word": "les"
+        },
+        {
+          "conf": 0.998769,
+          "end": 18.87,
+          "start": 18.6,
+          "word": "gens"
+        },
+        {
+          "conf": 0.948063,
+          "end": 19.02,
+          "start": 18.870016,
+          "word": "ou"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.14,
+          "start": 19.020022,
+          "word": "une"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.470908,
+          "start": 19.14,
+          "word": "bouteille"
+        },
+        {
+          "conf": 0.790466,
+          "end": 19.530015,
+          "start": 19.470908,
+          "word": "de"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.189901,
+          "start": 19.770383,
+          "word": "bordeaux"
+        },
+        {
+          "conf": 0.965963,
+          "end": 20.399846,
+          "start": 20.192858,
+          "word": "ils"
+        },
+        {
+          "conf": 0.972629,
+          "end": 20.49,
+          "start": 20.399846,
+          "word": "ont"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.88,
+          "start": 20.490037,
+          "word": "derri\u00e8re"
+        },
+        {
+          "conf": 0.999151,
+          "end": 21.06,
+          "start": 20.880026,
+          "word": "toute"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.12,
+          "start": 21.06,
+          "word": "l'"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.51,
+          "start": 21.12,
+          "word": "histoire"
+        }
+      ]
+    },
+    {
+      "end": 25.739951,
+      "speaker_id": "spk3",
+      "start": 21.511432,
+      "words": [
+        {
+          "conf": 0.46856,
+          "end": 21.964812,
+          "start": 21.511432,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.529686,
+          "end": 22.350038,
+          "start": 22.246567,
+          "word": "a"
+        },
+        {
+          "conf": 0.451409,
+          "end": 22.799835,
+          "start": 22.350225,
+          "word": "hauss\u00e9"
+        },
+        {
+          "conf": 0.866459,
+          "end": 23.017474,
+          "start": 22.800009,
+          "word": "c'"
+        },
+        {
+          "conf": 0.84677,
+          "end": 23.37,
+          "start": 23.017474,
+          "word": "est"
+        },
+        {
+          "conf": 0.998728,
+          "end": 23.64,
+          "start": 23.43,
+          "word": "la"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.18,
+          "start": 23.64,
+          "word": "s\u00e9lection"
+        },
+        {
+          "conf": 0.993881,
+          "end": 24.27,
+          "start": 24.18,
+          "word": "des"
+        },
+        {
+          "conf": 0.995958,
+          "end": 24.780011,
+          "start": 24.270137,
+          "word": "c\u00e9pages"
+        },
+        {
+          "conf": 0.986997,
+          "end": 24.869989,
+          "start": 24.780062,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.17,
+          "start": 24.87,
+          "word": "travers"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.32,
+          "start": 25.17,
+          "word": "les"
+        },
+        {
+          "conf": 0.893537,
+          "end": 25.739951,
+          "start": 25.32,
+          "word": "\u00e2ges"
+        }
+      ]
+    },
+    {
+      "end": 43.32,
+      "speaker_id": "spk4",
+      "start": 26.43,
+      "words": [
+        {
+          "conf": 0.995106,
+          "end": 26.67,
+          "start": 26.43,
+          "word": "par"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.79,
+          "start": 26.67,
+          "word": "les"
+        },
+        {
+          "conf": 0.9995,
+          "end": 27.48,
+          "start": 26.79,
+          "word": "vignerons"
+        },
+        {
+          "conf": 0.989301,
+          "end": 27.96,
+          "start": 27.75,
+          "word": "de"
+        },
+        {
+          "conf": 0.897781,
+          "end": 28.35,
+          "start": 27.96,
+          "word": "c\u00e9pages"
+        },
+        {
+          "conf": 0.910249,
+          "end": 29.01,
+          "start": 28.35,
+          "word": "autochtones"
+        },
+        {
+          "conf": 0.937028,
+          "end": 30.089963,
+          "start": 29.76,
+          "word": "euh"
+        },
+        {
+          "conf": 0.85372,
+          "end": 30.27,
+          "start": 30.090029,
+          "word": "et"
+        },
+        {
+          "conf": 0.999399,
+          "end": 30.42,
+          "start": 30.27,
+          "word": "que"
+        },
+        {
+          "conf": 0.995086,
+          "end": 30.48,
+          "start": 30.42,
+          "word": "l'"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.41,
+          "start": 30.48,
+          "word": "introduction"
+        },
+        {
+          "conf": 0.998782,
+          "end": 31.8,
+          "start": 31.5,
+          "word": "euh"
+        },
+        {
+          "conf": 0.99492,
+          "end": 32.984121,
+          "start": 31.800278,
+          "word": "de"
+        },
+        {
+          "conf": 0.975993,
+          "end": 33.629993,
+          "start": 33.27,
+          "word": "de"
+        },
+        {
+          "conf": 0.885118,
+          "end": 34.409956,
+          "start": 33.66,
+          "word": "g\u00e9n\u00e9tique"
+        },
+        {
+          "conf": 0.955119,
+          "end": 34.859967,
+          "start": 34.440256,
+          "word": "euh"
+        },
+        {
+          "conf": 0.999043,
+          "end": 35.13,
+          "start": 34.98,
+          "word": "d'"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.61,
+          "start": 35.130029,
+          "word": "ailleurs"
+        },
+        {
+          "conf": 0.651384,
+          "end": 36.33,
+          "start": 35.610311,
+          "word": "am\u00e9ricaine"
+        },
+        {
+          "conf": 0.959887,
+          "end": 36.81,
+          "start": 36.69,
+          "word": "et"
+        },
+        {
+          "conf": 0.999834,
+          "end": 36.9,
+          "start": 36.810011,
+          "word": "d'"
+        },
+        {
+          "conf": 0.894546,
+          "end": 37.469491,
+          "start": 36.900007,
+          "word": "hybrides"
+        },
+        {
+          "conf": 0.737038,
+          "end": 38.25,
+          "start": 38.04,
+          "word": "euh"
+        },
+        {
+          "conf": 0.996378,
+          "end": 38.52,
+          "start": 38.28,
+          "word": "bien"
+        },
+        {
+          "conf": 0.99715,
+          "end": 38.67,
+          "start": 38.520011,
+          "word": "\u00e7a"
+        },
+        {
+          "conf": 0.999409,
+          "end": 38.76,
+          "start": 38.67,
+          "word": "ne"
+        },
+        {
+          "conf": 0.999633,
+          "end": 38.94,
+          "start": 38.760018,
+          "word": "peut"
+        },
+        {
+          "conf": 0.997614,
+          "end": 39.479967,
+          "start": 38.94,
+          "word": "entra\u00eener"
+        },
+        {
+          "conf": 0.995601,
+          "end": 39.899901,
+          "start": 39.480033,
+          "word": "que"
+        },
+        {
+          "conf": 0.994143,
+          "end": 40.394667,
+          "start": 39.930018,
+          "word": "une"
+        },
+        {
+          "conf": 0.997901,
+          "end": 40.559985,
+          "start": 40.47,
+          "word": "un"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.4,
+          "start": 40.559985,
+          "word": "affaiblissement"
+        },
+        {
+          "conf": 0.999152,
+          "end": 42.12,
+          "start": 41.52,
+          "word": "euh"
+        },
+        {
+          "conf": 0.857092,
+          "end": 42.713514,
+          "start": 42.15,
+          "word": "de"
+        },
+        {
+          "conf": 0.996073,
+          "end": 42.955214,
+          "start": 42.713514,
+          "word": "de"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.14,
+          "start": 42.959703,
+          "word": "de"
+        },
+        {
+          "conf": 0.999538,
+          "end": 43.32,
+          "start": 43.140015,
+          "word": "cette"
+        }
+      ]
+    },
+    {
+      "end": 56.939996,
+      "speaker_id": "spk1",
+      "start": 43.32,
+      "words": [
+        {
+          "conf": 1.0,
+          "end": 43.92,
+          "start": 43.32,
+          "word": "filiation"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.4,
+          "start": 44.16,
+          "word": "dans"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.46,
+          "start": 44.4,
+          "word": "l'"
+        },
+        {
+          "conf": 0.99291,
+          "end": 44.88,
+          "start": 44.46,
+          "word": "entre-deux"
+        },
+        {
+          "conf": 0.963766,
+          "end": 45.18,
+          "start": 44.88,
+          "word": "mers"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.39,
+          "start": 45.21004,
+          "word": "les"
+        },
+        {
+          "conf": 0.999431,
+          "end": 45.81,
+          "start": 45.39,
+          "word": "vignobles"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.99,
+          "start": 45.81,
+          "word": "du"
+        },
+        {
+          "conf": 0.720829,
+          "end": 46.305663,
+          "start": 45.99,
+          "word": "coup"
+        },
+        {
+          "conf": 0.838319,
+          "end": 47.1,
+          "start": 46.380055,
+          "word": "exp\u00e9rimente"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.37,
+          "start": 47.1,
+          "word": "depuis"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.49,
+          "start": 47.37,
+          "word": "deux"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.61,
+          "start": 47.49,
+          "word": "mille"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.18,
+          "start": 47.61,
+          "word": "quatorze"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.57,
+          "start": 48.24,
+          "word": "dix"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.93,
+          "start": 48.57,
+          "word": "hectares"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.05,
+          "start": 48.93,
+          "word": "de"
+        },
+        {
+          "conf": 0.991008,
+          "end": 49.44,
+          "start": 49.05,
+          "word": "c\u00e9pages"
+        },
+        {
+          "conf": 0.938337,
+          "end": 49.98,
+          "start": 49.440004,
+          "word": "r\u00e9sistants"
+        },
+        {
+          "conf": 0.876488,
+          "end": 50.04,
+          "start": 49.98,
+          "word": "aux"
+        },
+        {
+          "conf": 0.897564,
+          "end": 50.58,
+          "start": 50.04,
+          "word": "maladies"
+        },
+        {
+          "conf": 0.548174,
+          "end": 50.783405,
+          "start": 50.58,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.996757,
+          "end": 51.0,
+          "start": 50.783405,
+          "word": "sur"
+        },
+        {
+          "conf": 0.756156,
+          "end": 51.15,
+          "start": 51.0,
+          "word": "leurs"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.42,
+          "start": 51.15,
+          "word": "quatre"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.6,
+          "start": 51.42,
+          "word": "cent"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.02,
+          "start": 51.6,
+          "word": "cinquante"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.38,
+          "start": 52.05,
+          "word": "hectares"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.5,
+          "start": 52.38,
+          "word": "de"
+        },
+        {
+          "conf": 0.754386,
+          "end": 52.919989,
+          "start": 52.5,
+          "word": "vignes"
+        },
+        {
+          "conf": 0.860422,
+          "end": 53.16,
+          "start": 52.92,
+          "word": "<unk>"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.31,
+          "start": 53.160011,
+          "word": "un"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.67,
+          "start": 53.31,
+          "word": "choix"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.76,
+          "start": 53.67,
+          "word": "d'"
+        },
+        {
+          "conf": 0.719778,
+          "end": 54.239996,
+          "start": 53.76,
+          "word": "hybrides"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.48,
+          "start": 54.24,
+          "word": "pour"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.93,
+          "start": 54.48,
+          "word": "r\u00e9duire"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.17,
+          "start": 54.96,
+          "word": "de"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.59,
+          "start": 55.17,
+          "word": "quatre-vingts"
+        },
+        {
+          "conf": 0.994748,
+          "end": 55.77,
+          "start": 55.59,
+          "word": "pour"
+        },
+        {
+          "conf": 0.993605,
+          "end": 56.01,
+          "start": 55.77,
+          "word": "cent"
+        },
+        {
+          "conf": 0.621289,
+          "end": 56.218004,
+          "start": 56.01,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.800073,
+          "end": 56.43,
+          "start": 56.22,
+          "word": "leur"
+        },
+        {
+          "conf": 0.803332,
+          "end": 56.939996,
+          "start": 56.430007,
+          "word": "traitement"
+        }
+      ]
+    },
+    {
+      "end": 59.610029,
+      "speaker_id": "spk5",
+      "start": 57.48,
+      "words": [
+        {
+          "conf": 0.97934,
+          "end": 57.69,
+          "start": 57.48,
+          "word": "\u00e7a"
+        },
+        {
+          "conf": 0.931258,
+          "end": 57.9,
+          "start": 57.690212,
+          "word": "serait"
+        },
+        {
+          "conf": 0.999295,
+          "end": 57.96,
+          "start": 57.901348,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 0.996785,
+          "end": 58.56,
+          "start": 57.96,
+          "word": "hauteur"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.98,
+          "start": 58.56,
+          "word": "de"
+        },
+        {
+          "conf": 0.79541,
+          "end": 59.610029,
+          "start": 58.980586,
+          "word": "euh"
+        }
+      ]
+    },
+    {
+      "end": 78.72,
+      "speaker_id": "spk6",
+      "start": 59.67,
+      "words": [
+        {
+          "conf": 1.0,
+          "end": 60.03,
+          "start": 59.67,
+          "word": "cinq"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.27,
+          "start": 60.03,
+          "word": "pour"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.48,
+          "start": 60.27,
+          "word": "cent"
+        },
+        {
+          "conf": 0.999359,
+          "end": 60.63,
+          "start": 60.48,
+          "word": "du"
+        },
+        {
+          "conf": 0.995423,
+          "end": 61.25985,
+          "start": 60.63,
+          "word": "vignoble"
+        },
+        {
+          "conf": 0.996019,
+          "end": 62.245518,
+          "start": 61.29097,
+          "word": "maximum"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.55,
+          "start": 62.31,
+          "word": "chez"
+        },
+        {
+          "conf": 0.998937,
+          "end": 62.64,
+          "start": 62.55,
+          "word": "les"
+        },
+        {
+          "conf": 0.999389,
+          "end": 63.24,
+          "start": 62.64,
+          "word": "vignerons"
+        },
+        {
+          "conf": 0.830294,
+          "end": 63.656133,
+          "start": 63.269707,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.853516,
+          "end": 63.992402,
+          "start": 63.66,
+          "word": "et"
+        },
+        {
+          "conf": 0.709287,
+          "end": 64.11,
+          "start": 63.992402,
+          "word": "euh"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.35,
+          "start": 64.118606,
+          "word": "dix"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.59,
+          "start": 64.35,
+          "word": "pour"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.86,
+          "start": 64.59,
+          "word": "cent"
+        },
+        {
+          "conf": 0.99913,
+          "end": 65.01,
+          "start": 64.86,
+          "word": "de"
+        },
+        {
+          "conf": 0.99682,
+          "end": 65.07,
+          "start": 65.010007,
+          "word": "l'"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.7,
+          "start": 65.07,
+          "word": "assemblage"
+        },
+        {
+          "conf": 0.993411,
+          "end": 66.18,
+          "start": 65.7,
+          "word": "final"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.33,
+          "start": 66.18,
+          "word": "du"
+        },
+        {
+          "conf": 0.637908,
+          "end": 66.57,
+          "start": 66.33,
+          "word": "vin"
+        },
+        {
+          "conf": 0.522196,
+          "end": 67.140103,
+          "start": 66.570059,
+          "word": "<unk>"
+        },
+        {
+          "conf": 0.938908,
+          "end": 67.379868,
+          "start": 67.17,
+          "word": "euh"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.77,
+          "start": 67.38156,
+          "word": "donc"
+        },
+        {
+          "conf": 0.999589,
+          "end": 68.849985,
+          "start": 68.28,
+          "word": "euh"
+        },
+        {
+          "conf": 0.971768,
+          "end": 69.33,
+          "start": 68.94,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.478748,
+          "start": 69.377051,
+          "word": "on"
+        },
+        {
+          "conf": 0.998407,
+          "end": 69.66,
+          "start": 69.48074,
+          "word": "va"
+        },
+        {
+          "conf": 0.999806,
+          "end": 69.959641,
+          "start": 69.69,
+          "word": "pas"
+        },
+        {
+          "conf": 0.532358,
+          "end": 70.71,
+          "start": 69.960974,
+          "word": "d\u00e9naturer"
+        },
+        {
+          "conf": 0.996853,
+          "end": 71.489963,
+          "start": 70.710044,
+          "word": "bordeaux"
+        },
+        {
+          "conf": 0.989165,
+          "end": 71.699919,
+          "start": 71.490081,
+          "word": "euh"
+        },
+        {
+          "conf": 0.918414,
+          "end": 71.849985,
+          "start": 71.700227,
+          "word": "on"
+        },
+        {
+          "conf": 0.9956,
+          "end": 72.0,
+          "start": 71.85,
+          "word": "va"
+        },
+        {
+          "conf": 0.995359,
+          "end": 72.39,
+          "start": 72.0,
+          "word": "garder"
+        },
+        {
+          "conf": 0.960929,
+          "end": 73.02,
+          "start": 72.390066,
+          "word": "quatre-vingt-dix"
+        },
+        {
+          "conf": 1.0,
+          "end": 73.23,
+          "start": 73.02,
+          "word": "pour"
+        },
+        {
+          "conf": 1.0,
+          "end": 73.5,
+          "start": 73.23,
+          "word": "cent"
+        },
+        {
+          "conf": 0.81976,
+          "end": 73.649978,
+          "start": 73.5,
+          "word": "de"
+        },
+        {
+          "conf": 0.854266,
+          "end": 74.49,
+          "start": 73.68,
+          "word": "vari\u00e9t\u00e9s"
+        },
+        {
+          "conf": 0.518224,
+          "end": 74.61,
+          "start": 74.49,
+          "word": "o\u00f9"
+        },
+        {
+          "conf": 1.0,
+          "end": 75.3,
+          "start": 74.610007,
+          "word": "quatre-vingt-quinze"
+        },
+        {
+          "conf": 0.995811,
+          "end": 75.51,
+          "start": 75.3,
+          "word": "pour"
+        },
+        {
+          "conf": 0.995811,
+          "end": 75.72,
+          "start": 75.51,
+          "word": "cent"
+        },
+        {
+          "conf": 0.881638,
+          "end": 75.839993,
+          "start": 75.72,
+          "word": "de"
+        },
+        {
+          "conf": 0.703214,
+          "end": 76.5,
+          "start": 75.844453,
+          "word": "vari\u00e9t\u00e9s"
+        },
+        {
+          "conf": 0.848375,
+          "end": 76.859832,
+          "start": 76.500073,
+          "word": "euh"
+        },
+        {
+          "conf": 0.654078,
+          "end": 77.609883,
+          "start": 76.92,
+          "word": "classique"
+        },
+        {
+          "conf": 0.987507,
+          "end": 77.73,
+          "start": 77.669429,
+          "word": "qu'"
+        },
+        {
+          "conf": 1.0,
+          "end": 77.79,
+          "start": 77.73,
+          "word": "on"
+        },
+        {
+          "conf": 0.945378,
+          "end": 78.09,
+          "start": 77.79,
+          "word": "conna\u00eet"
+        },
+        {
+          "conf": 0.948962,
+          "end": 78.72,
+          "start": 78.09,
+          "word": "aujourd'hui"
+        }
+      ]
+    },
+    {
+      "end": 84.81,
+      "speaker_id": "spk1",
+      "start": 79.44,
+      "words": [
+        {
+          "conf": 0.979268,
+          "end": 79.98104,
+          "start": 79.44,
+          "word": "jonathan"
+        },
+        {
+          "conf": 0.992936,
+          "end": 80.13,
+          "start": 79.981985,
+          "word": "du"
+        },
+        {
+          "conf": 0.511212,
+          "end": 80.489993,
+          "start": 80.13,
+          "word": "cours"
+        },
+        {
+          "conf": 0.63912,
+          "end": 80.67,
+          "start": 80.52,
+          "word": "a"
+        },
+        {
+          "conf": 0.749692,
+          "end": 80.91,
+          "start": 80.67,
+          "word": "fait"
+        },
+        {
+          "conf": 0.962368,
+          "end": 81.420015,
+          "start": 80.94,
+          "word": "d\u00e9guster"
+        },
+        {
+          "conf": 0.996183,
+          "end": 81.48,
+          "start": 81.420022,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 1.0,
+          "end": 81.54,
+          "start": 81.48,
+          "word": "l'"
+        },
+        {
+          "conf": 1.0,
+          "end": 82.049421,
+          "start": 81.54,
+          "word": "aveugle"
+        },
+        {
+          "conf": 0.47174,
+          "end": 82.26,
+          "start": 82.050381,
+          "word": "sont"
+        },
+        {
+          "conf": 0.789164,
+          "end": 82.53,
+          "start": 82.260007,
+          "word": "blanc"
+        },
+        {
+          "conf": 0.794465,
+          "end": 82.86,
+          "start": 82.53,
+          "word": "sec"
+        },
+        {
+          "conf": 0.807138,
+          "end": 83.22,
+          "start": 82.86,
+          "word": "issu"
+        },
+        {
+          "conf": 0.970779,
+          "end": 83.37,
+          "start": 83.22,
+          "word": "de"
+        },
+        {
+          "conf": 0.98949,
+          "end": 83.82,
+          "start": 83.37,
+          "word": "vignes"
+        },
+        {
+          "conf": 0.904022,
+          "end": 84.36,
+          "start": 83.85,
+          "word": "plant\u00e9es"
+        },
+        {
+          "conf": 0.998176,
+          "end": 84.45,
+          "start": 84.36,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 1.0,
+          "end": 84.81,
+          "start": 84.45,
+          "word": "titre"
+        }
+      ]
+    },
+    {
+      "end": 90.03,
+      "speaker_id": "spk7",
+      "start": 84.93,
+      "words": [
+        {
+          "conf": 0.998429,
+          "end": 85.98,
+          "start": 84.93,
+          "word": "exp\u00e9rimental"
+        },
+        {
+          "conf": 0.934427,
+          "end": 86.999502,
+          "start": 86.579912,
+          "word": "sur"
+        },
+        {
+          "conf": 0.513,
+          "end": 89.489465,
+          "start": 89.155305,
+          "word": "quatre"
+        },
+        {
+          "conf": 0.414989,
+          "end": 89.760132,
+          "start": 89.67,
+          "word": "ans"
+        },
+        {
+          "conf": 0.408536,
+          "end": 89.850022,
+          "start": 89.760542,
+          "word": "\u00e0"
+        },
+        {
+          "conf": 1.0,
+          "end": 90.03,
+          "start": 89.91,
+          "word": "un"
+        }
+      ]
+    },
+    {
+      "end": 92.13,
+      "speaker_id": "spk1",
+      "start": 90.03,
+      "words": [
+        {
+          "conf": 0.996017,
+          "end": 90.54,
+          "start": 90.03,
+          "word": "r\u00e9sultat"
+        },
+        {
+          "conf": 1.0,
+          "end": 91.14,
+          "start": 90.54,
+          "word": "bluffant"
+        },
+        {
+          "conf": 1.0,
+          "end": 91.410015,
+          "start": 91.2,
+          "word": "pour"
+        },
+        {
+          "conf": 0.998373,
+          "end": 91.5,
+          "start": 91.410015,
+          "word": "un"
+        },
+        {
+          "conf": 0.931835,
+          "end": 91.71,
+          "start": 91.5,
+          "word": "vin"
+        },
+        {
+          "conf": 0.789423,
+          "end": 92.13,
+          "start": 91.71,
+          "word": "sorti"
+        }
+      ]
+    },
+    {
+      "end": 96.6,
+      "speaker_id": "spk8",
+      "start": 92.13,
+      "words": [
+        {
+          "conf": 0.999647,
+          "end": 92.190359,
+          "start": 92.13,
+          "word": "en"
+        },
+        {
+          "conf": 0.526369,
+          "end": 92.370154,
+          "start": 92.190359,
+          "word": "vain"
+        },
+        {
+          "conf": 0.773728,
+          "end": 92.429993,
+          "start": 92.370154,
+          "word": "de"
+        },
+        {
+          "conf": 0.797667,
+          "end": 92.97,
+          "start": 92.429993,
+          "word": "france"
+        },
+        {
+          "conf": 0.712437,
+          "end": 93.774346,
+          "start": 93.283066,
+          "word": "croisement"
+        },
+        {
+          "conf": 0.625733,
+          "end": 93.961252,
+          "start": 93.774346,
+          "word": "euh"
+        },
+        {
+          "conf": 1.0,
+          "end": 94.62,
+          "start": 94.05,
+          "word": "sauvignon"
+        },
+        {
+          "conf": 0.989928,
+          "end": 95.04,
+          "start": 94.62,
+          "word": "blanc"
+        },
+        {
+          "conf": 1.0,
+          "end": 95.879604,
+          "start": 95.04,
+          "word": "riesling"
+        },
+        {
+          "conf": 0.541887,
+          "end": 96.233672,
+          "start": 95.938513,
+          "word": "et"
+        },
+        {
+          "conf": 0.917917,
+          "end": 96.419927,
+          "start": 96.25656,
+          "word": "de"
+        },
+        {
+          "conf": 0.516516,
+          "end": 96.6,
+          "start": 96.419927,
+          "word": "vignes"
+        }
+      ]
+    },
+    {
+      "end": 97.13978,
+      "speaker_id": "spk6",
+      "start": 96.630007,
+      "words": [
+        {
+          "conf": 0.54878,
+          "end": 97.13978,
+          "start": 96.630007,
+          "word": "sauvages"
+        }
+      ]
+    },
+    {
+      "end": 104.969934,
+      "speaker_id": "spk1",
+      "start": 97.38,
+      "words": [
+        {
+          "conf": 0.996033,
+          "end": 97.65,
+          "start": 97.38,
+          "word": "si"
+        },
+        {
+          "conf": 1.0,
+          "end": 97.77,
+          "start": 97.65,
+          "word": "le"
+        },
+        {
+          "conf": 1.0,
+          "end": 98.07,
+          "start": 97.77,
+          "word": "d\u00e9bat"
+        },
+        {
+          "conf": 0.997906,
+          "end": 98.13,
+          "start": 98.07,
+          "word": "est"
+        },
+        {
+          "conf": 0.998857,
+          "end": 98.76,
+          "start": 98.13,
+          "word": "relanc\u00e9"
+        },
+        {
+          "conf": 1.0,
+          "end": 99.0,
+          "start": 98.85,
+          "word": "les"
+        },
+        {
+          "conf": 0.999024,
+          "end": 99.39,
+          "start": 99.0,
+          "word": "vignobles"
+        },
+        {
+          "conf": 1.0,
+          "end": 99.51,
+          "start": 99.39,
+          "word": "du"
+        },
+        {
+          "conf": 0.604407,
+          "end": 99.80981,
+          "start": 99.510037,
+          "word": "cours"
+        },
+        {
+          "conf": 0.732822,
+          "end": 100.44,
+          "start": 99.81,
+          "word": "commercialise"
+        },
+        {
+          "conf": 1.0,
+          "end": 100.8,
+          "start": 100.44,
+          "word": "d\u00e9j\u00e0"
+        },
+        {
+          "conf": 1.0,
+          "end": 101.13,
+          "start": 100.80011,
+          "word": "douze"
+        },
+        {
+          "conf": 0.990632,
+          "end": 101.31,
+          "start": 101.13,
+          "word": "mille"
+        },
+        {
+          "conf": 0.994961,
+          "end": 101.67,
+          "start": 101.31,
+          "word": "bouteilles"
+        },
+        {
+          "conf": 0.722324,
+          "end": 101.73,
+          "start": 101.67,
+          "word": "en"
+        },
+        {
+          "conf": 0.89842,
+          "end": 102.059978,
+          "start": 101.735823,
+          "word": "blanc"
+        },
+        {
+          "conf": 1.0,
+          "end": 102.45,
+          "start": 102.060037,
+          "word": "vingt-cinq"
+        },
+        {
+          "conf": 0.748149,
+          "end": 102.6,
+          "start": 102.45,
+          "word": "mille"
+        },
+        {
+          "conf": 0.51469,
+          "end": 102.659722,
+          "start": 102.6,
+          "word": "en"
+        },
+        {
+          "conf": 0.749745,
+          "end": 102.989971,
+          "start": 102.659722,
+          "word": "rouge"
+        },
+        {
+          "conf": 0.454431,
+          "end": 103.68,
+          "start": 103.26,
+          "word": "issue"
+        },
+        {
+          "conf": 1.0,
+          "end": 103.8,
+          "start": 103.68,
+          "word": "de"
+        },
+        {
+          "conf": 0.837108,
+          "end": 103.946895,
+          "start": 103.8,
+          "word": "ces"
+        },
+        {
+          "conf": 0.997656,
+          "end": 104.4,
+          "start": 103.946895,
+          "word": "c\u00e9pages"
+        },
+        {
+          "conf": 0.970346,
+          "end": 104.969934,
+          "start": 104.4,
+          "word": "r\u00e9sistants"
+        }
+      ]
+    }
+  ],
+  "text": [
+    "spk1 : c'est un signal d'alarme que lance xavier plantys le pr\u00e9sident de l'obliger sauternes et copropri\u00e9taire du ch\u00e2teau guiraud aller vers des c\u00e9pages hybrides r\u00e9sistants c'est pour lui une perte d'identit\u00e9 des vins cela va \u00e0 l'encontre des a aussi cr\u00e9\u00e9 par les vignerons et syndicats il y a plus de quatre-vingts ans",
+    "spk2 : quand les gens ou une bouteille de bordeaux ils ont derri\u00e8re toute l'histoire",
+    "spk3 : a hauss\u00e9 c'est la s\u00e9lection des c\u00e9pages \u00e0 travers les \u00e2ges",
+    "spk4 : par les vignerons de c\u00e9pages autochtones euh et que l'introduction euh de de g\u00e9n\u00e9tique euh d'ailleurs am\u00e9ricaine et d'hybrides euh bien \u00e7a ne peut entra\u00eener que une un affaiblissement euh de de de cette",
+    "spk1 : filiation dans l'entre-deux mers les vignobles du coup exp\u00e9rimente depuis deux mille quatorze dix hectares de c\u00e9pages r\u00e9sistants aux maladies sur leurs quatre cent cinquante hectares de vignes un choix d'hybrides pour r\u00e9duire de quatre-vingts pour cent leur traitement",
+    "spk5 : \u00e7a serait \u00e0 hauteur de euh",
+    "spk6 : cinq pour cent du vignoble maximum chez les vignerons et euh dix pour cent de l'assemblage final du vin euh donc euh on on va pas d\u00e9naturer bordeaux euh on va garder quatre-vingt-dix pour cent de vari\u00e9t\u00e9s o\u00f9 quatre-vingt-quinze pour cent de vari\u00e9t\u00e9s euh classique qu'on conna\u00eet aujourd'hui",
+    "spk1 : jonathan du cours a fait d\u00e9guster \u00e0 l'aveugle sont blanc sec issu de vignes plant\u00e9es \u00e0 titre",
+    "spk7 : exp\u00e9rimental sur quatre ans \u00e0 un",
+    "spk1 : r\u00e9sultat bluffant pour un vin sorti",
+    "spk8 : en vain de france croisement euh sauvignon blanc riesling et de vignes",
+    "spk6 : sauvages",
+    "spk1 : si le d\u00e9bat est relanc\u00e9 les vignobles du cours commercialise d\u00e9j\u00e0 douze mille bouteilles en blanc vingt-cinq mille en rouge issue de ces c\u00e9pages r\u00e9sistants"
+  ]
+}
