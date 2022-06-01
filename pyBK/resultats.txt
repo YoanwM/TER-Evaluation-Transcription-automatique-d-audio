@@ -1,0 +1,378 @@
+
+Processing file 1 / 9
+showName		 cepages-resistants
+Extracting features
+Initial number of features	 10537
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/cepages-resistants.lab.
+
+Number of speech features	 10332
+Training the KBM... 
+Training pool of 1125 gaussians with a rate of 9 frames
+Selected 337 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   1 and   8 with a similarity score of 0.9419
+Merging clusters   1 and  13 with a similarity score of 0.9191
+Merging clusters   1 and   2 with a similarity score of 0.8933
+Merging clusters  10 and  12 with a similarity score of 0.7947
+Merging clusters   1 and  16 with a similarity score of 0.7839
+Merging clusters  10 and  11 with a similarity score of 0.7444
+Merging clusters   5 and   6 with a similarity score of 0.6773
+Merging clusters   5 and   7 with a similarity score of 0.6245
+Merging clusters  10 and  14 with a similarity score of 0.4692
+Merging clusters  10 and  15 with a similarity score of 0.4695
+Merging clusters   9 and  10 with a similarity score of 0.447
+Merging clusters   5 and   9 with a similarity score of 0.4411
+Merging clusters   1 and   5 with a similarity score of 0.403
+Merging clusters   3 and   4 with a similarity score of 0.4054
+Merging clusters   1 and   3 with a similarity score of 0.4166
+done
+Selecting best clustering...
+Best clustering:	 11
+Number of clusters:	 5
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Processing file 2 / 9
+showName		 cours-doenologie-masterclass
+Extracting features
+Initial number of features	 44274
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/cours-doenologie-masterclass.lab.
+
+Number of speech features	 42855
+Training the KBM... 
+Training pool of 1040 gaussians with a rate of 41 frames
+Selected 312 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   4 and  10 with a similarity score of 0.8596
+Merging clusters   5 and   6 with a similarity score of 0.7849
+Merging clusters   4 and   9 with a similarity score of 0.6962
+Merging clusters  12 and  13 with a similarity score of 0.6863
+Merging clusters   1 and   7 with a similarity score of 0.5896
+Merging clusters   4 and   5 with a similarity score of 0.5765
+Merging clusters   3 and   4 with a similarity score of 0.5537
+Merging clusters   8 and  15 with a similarity score of 0.5046
+Merging clusters   1 and   2 with a similarity score of 0.5155
+Merging clusters   1 and   3 with a similarity score of 0.4524
+Merging clusters   1 and   8 with a similarity score of 0.4769
+Merging clusters   1 and  12 with a similarity score of 0.4229
+Merging clusters   1 and  14 with a similarity score of 0.2812
+Merging clusters   1 and  11 with a similarity score of 0.267
+Merging clusters   1 and  16 with a similarity score of 0.2162
+done
+Selecting best clustering...
+Best clustering:	 9
+Number of clusters:	 7
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Processing file 3 / 9
+showName		 des-vignes-resistantes-au-mildiou-avec-linra-de-gruissan
+Extracting features
+Initial number of features	 17101
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/des-vignes-resistantes-au-mildiou-avec-linra-de-gruissan.lab.
+
+Number of speech features	 16308
+Training the KBM... 
+Training pool of 1073 gaussians with a rate of 15 frames
+Selected 321 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   1 and  11 with a similarity score of 0.916
+Merging clusters   1 and  16 with a similarity score of 0.8984
+Merging clusters   1 and   5 with a similarity score of 0.8604
+Merging clusters   1 and   8 with a similarity score of 0.8487
+Merging clusters   6 and   7 with a similarity score of 0.8183
+Merging clusters   2 and   3 with a similarity score of 0.7878
+Merging clusters   2 and   4 with a similarity score of 0.7161
+Merging clusters   1 and   6 with a similarity score of 0.6103
+Merging clusters  12 and  13 with a similarity score of 0.5546
+Merging clusters  12 and  14 with a similarity score of 0.5782
+Merging clusters  12 and  15 with a similarity score of 0.4896
+Merging clusters   2 and  12 with a similarity score of 0.5187
+Merging clusters   1 and   2 with a similarity score of 0.4624
+Merging clusters   9 and  10 with a similarity score of 0.4024
+Merging clusters   1 and   9 with a similarity score of 0.3959
+done
+Selecting best clustering...
+Best clustering:	 11
+Number of clusters:	 5
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Processing file 4 / 9
+showName		 laccave-seminaire-ideoypesvins-de-demain-eric-giraud-heraud
+Extracting features
+Initial number of features	 94125
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/laccave-seminaire-ideoypesvins-de-demain-eric-giraud-heraud.lab.
+
+Number of speech features	 91271
+Training the KBM... 
+Training pool of 1821 gaussians with a rate of 50 frames
+Selected 546 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   3 and   4 with a similarity score of 0.899
+Merging clusters  15 and  16 with a similarity score of 0.8987
+Merging clusters   2 and   9 with a similarity score of 0.8605
+Merging clusters   2 and  15 with a similarity score of 0.852
+Merging clusters   2 and  10 with a similarity score of 0.8353
+Merging clusters   2 and   7 with a similarity score of 0.8001
+Merging clusters   2 and   6 with a similarity score of 0.8216
+Merging clusters   2 and  12 with a similarity score of 0.8471
+Merging clusters   2 and  13 with a similarity score of 0.8361
+Merging clusters   2 and   8 with a similarity score of 0.7866
+Merging clusters   2 and  11 with a similarity score of 0.7436
+Merging clusters   2 and   5 with a similarity score of 0.7337
+Merging clusters   2 and   3 with a similarity score of 0.7188
+Merging clusters   1 and   2 with a similarity score of 0.659
+Merging clusters   1 and  14 with a similarity score of 0.2821
+done
+Selecting best clustering...
+Best clustering:	 5
+Number of clusters:	 11
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Processing file 5 / 9
+showName		 les-varietes-resistantes-evaluation-sur-le-terrain
+Extracting features
+Initial number of features	 30138
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/les-varietes-resistantes-evaluation-sur-le-terrain.lab.
+
+Number of speech features	 28343
+Training the KBM... 
+Training pool of 1042 gaussians with a rate of 27 frames
+Selected 312 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   7 and   8 with a similarity score of 0.9025
+Merging clusters   3 and   7 with a similarity score of 0.8266
+Merging clusters  12 and  13 with a similarity score of 0.831
+Merging clusters   3 and   4 with a similarity score of 0.7803
+Merging clusters   3 and   5 with a similarity score of 0.7733
+Merging clusters  10 and  15 with a similarity score of 0.7719
+Merging clusters   3 and  10 with a similarity score of 0.7643
+Merging clusters   3 and   9 with a similarity score of 0.7582
+Merging clusters  11 and  12 with a similarity score of 0.7353
+Merging clusters   3 and  14 with a similarity score of 0.7555
+Merging clusters   3 and  11 with a similarity score of 0.6665
+Merging clusters   3 and  16 with a similarity score of 0.4096
+Merging clusters   3 and   6 with a similarity score of 0.2061
+Merging clusters   1 and   2 with a similarity score of 0.1898
+Merging clusters   1 and   3 with a similarity score of 0.0796
+done
+Selecting best clustering...
+Best clustering:	 10
+Number of clusters:	 6
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Processing file 6 / 9
+showName		 vitis-prohibita-extrait-10
+Extracting features
+Initial number of features	 7813
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/vitis-prohibita-extrait-10.lab.
+
+Number of speech features	 7608
+Training the KBM... 
+Training pool of 1058 gaussians with a rate of 7 frames
+Selected 317 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   7 and  10 with a similarity score of 0.6653
+Merging clusters   7 and   9 with a similarity score of 0.622
+Merging clusters   7 and   8 with a similarity score of 0.6165
+Merging clusters  12 and  13 with a similarity score of 0.585
+Merging clusters   5 and  12 with a similarity score of 0.6151
+Merging clusters   7 and  11 with a similarity score of 0.5775
+Merging clusters   5 and   7 with a similarity score of 0.547
+Merging clusters   1 and   2 with a similarity score of 0.5346
+Merging clusters   1 and   3 with a similarity score of 0.484
+Merging clusters   4 and   5 with a similarity score of 0.4805
+Merging clusters   4 and   6 with a similarity score of 0.3738
+Merging clusters   1 and   4 with a similarity score of 0.3581
+Merging clusters  14 and  15 with a similarity score of 0.2531
+Merging clusters  14 and  16 with a similarity score of 0.1468
+Merging clusters   1 and  14 with a similarity score of 0.0958
+done
+Selecting best clustering...
+Best clustering:	 11
+Number of clusters:	 5
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Processing file 7 / 9
+showName		 vitis-prohibita-extrait-13
+Extracting features
+Initial number of features	 6409
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/vitis-prohibita-extrait-13.lab.
+
+Number of speech features	 6000
+Training the KBM... 
+Training pool of 1160 gaussians with a rate of 5 frames
+Selected 348 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   1 and  12 with a similarity score of 0.8783
+Merging clusters   2 and   4 with a similarity score of 0.8316
+Merging clusters   7 and  11 with a similarity score of 0.8308
+Merging clusters   2 and   6 with a similarity score of 0.7568
+Merging clusters   2 and   7 with a similarity score of 0.715
+Merging clusters   2 and  13 with a similarity score of 0.7373
+Merging clusters   2 and   9 with a similarity score of 0.657
+Merging clusters   1 and   2 with a similarity score of 0.6686
+Merging clusters   5 and   8 with a similarity score of 0.6902
+Merging clusters   3 and   5 with a similarity score of 0.6772
+Merging clusters   1 and   3 with a similarity score of 0.6194
+Merging clusters   1 and  10 with a similarity score of 0.4147
+Merging clusters  14 and  15 with a similarity score of 0.2051
+Merging clusters  14 and  16 with a similarity score of 0.1595
+Merging clusters   1 and  14 with a similarity score of 0.0458
+done
+Selecting best clustering...
+Best clustering:	 10
+Number of clusters:	 6
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Processing file 8 / 9
+showName		 vitis-prohibita-extrait-15
+Extracting features
+Initial number of features	 8693
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/vitis-prohibita-extrait-15.lab.
+
+Number of speech features	 8226
+Training the KBM... 
+Training pool of 1146 gaussians with a rate of 7 frames
+Selected 343 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   2 and  13 with a similarity score of 0.9054
+Merging clusters   8 and  11 with a similarity score of 0.8579
+Merging clusters   8 and  12 with a similarity score of 0.8761
+Merging clusters   2 and   7 with a similarity score of 0.8229
+Merging clusters   2 and  14 with a similarity score of 0.8145
+Merging clusters   2 and   9 with a similarity score of 0.7732
+Merging clusters   2 and   6 with a similarity score of 0.7805
+Merging clusters   2 and   8 with a similarity score of 0.7888
+Merging clusters   2 and   3 with a similarity score of 0.7563
+Merging clusters   1 and   2 with a similarity score of 0.727
+Merging clusters   1 and  10 with a similarity score of 0.6604
+Merging clusters   1 and   4 with a similarity score of 0.5563
+Merging clusters   1 and   5 with a similarity score of 0.332
+Merging clusters  15 and  16 with a similarity score of 0.1848
+Merging clusters   1 and  15 with a similarity score of 0.0752
+done
+Selecting best clustering...
+Best clustering:	 12
+Number of clusters:	 4
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Processing file 9 / 9
+showName		 vitis-prohibita-extrait-4
+Extracting features
+Initial number of features	 5673
+UEM file does not exist. The complete audio content is considered.
+SAD file does not exist or automatic VAD is enabled in the config. VAD is applied and saved at ./sad/vitis-prohibita-extrait-4.lab.
+
+Number of speech features	 5568
+Training the KBM... 
+Training pool of 1073 gaussians with a rate of 5 frames
+Selected 321 gaussians from the pool
+Calculating log-likelihood table... done
+Calculating Vg matrix... done
+Computing binary keys for all segments... 
+done
+Performing initial clustering... 
+done
+Performing agglomerative clustering... 
+Merging clusters   1 and   2 with a similarity score of 0.824
+Merging clusters   7 and   8 with a similarity score of 0.6607
+Merging clusters   1 and   3 with a similarity score of 0.628
+Merging clusters   4 and   5 with a similarity score of 0.6263
+Merging clusters   4 and   7 with a similarity score of 0.6012
+Merging clusters   4 and   6 with a similarity score of 0.5447
+Merging clusters   4 and   9 with a similarity score of 0.5011
+Merging clusters   4 and  10 with a similarity score of 0.478
+Merging clusters   1 and   4 with a similarity score of 0.4006
+Merging clusters  13 and  14 with a similarity score of 0.3239
+Merging clusters  13 and  15 with a similarity score of 0.1963
+Merging clusters   1 and  12 with a similarity score of 0.1718
+Merging clusters   1 and  11 with a similarity score of 0.1866
+Merging clusters  13 and  16 with a similarity score of 0.1274
+Merging clusters   1 and  13 with a similarity score of 0.0529
+done
+Selecting best clustering...
+Best clustering:	 11
+Number of clusters:	 5
+Performing GMM-ML resegmentation...
+done
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
