@@ -6,8 +6,8 @@ Ce projet supervisé par Isabelle Ferrané, et réalisé par Dany Neang, Julian 
 ## Extraction automatique 
 
 Afin de réaliser la trancscription automatique, il faut lancer la ligne de commande suivante : 
-`python3 ./AudioExtraction/youtubeExtraction.py [URLS]
-`
+```$ python3 ./AudioExtraction/youtubeExtraction.py [URLS]
+```
 - URLS est une option permettant de lister une ou plusieurs urls de vidéos youtube d'où la vidéos sera extraite 
 - Si cette option n'est pas présente, l'extraction se fera à l'aide du fichier présent dans le fichier suivant : `./youtube_videos/urls`
 
