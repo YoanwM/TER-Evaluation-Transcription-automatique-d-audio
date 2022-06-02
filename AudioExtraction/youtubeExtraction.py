@@ -58,9 +58,9 @@ def video_to_audio(video_name:str):
 
 if __name__ == '__main__':
 
-    if sys.argv.__len__()>1 :
+    if sys.argv.__len__()>2 :
         urls = []
-        for url in sys.argv[1:] :
+        for url in sys.argv[2:] :
             urls.append(url)
         videos = download_videos(urls)
     else :
@@ -71,6 +71,10 @@ if __name__ == '__main__':
         if not(os.listdir("./").__contains__("audios")):
             os.mkdir("./audios")
         if not(os.listdir("./audios").__contains__(v.title)):
+            os.mkdir("./audios/"+v.title)
+        if not(os.listdir("./").__contains__("transcriptions")):
+            os.mkdir("./audios")
+        if not(os.listdir("./transcriptions").__contains__(v.title)):
             os.mkdir("./audios/"+v.title)
         video_to_audio(v.title)
 
