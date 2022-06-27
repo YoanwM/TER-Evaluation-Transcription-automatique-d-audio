@@ -55,32 +55,24 @@ dans le dossier /videos (certains ont été retirés du dossier pyBK/audio faute
 
 ## Detection de visages
 
-La detection de visages dans les vidéos se fait à l'aide de pyannote-video.
-Pour l'utiliser, il faut d'abord se créer un bon environement (copier depuis pyannote video):
+La detection de visages dans les vidéos se fait à l'aide de pyannote-vidéo.
+Pour l'utiliser, il faut d'abord se créer un bon environement (copier depuis pyannote-vidéo):
 
 ```bash
 $ conda create -n pyannote python=3.6 anaconda
 $ source activate pyannote
 ```
 
-Then, install `pyannote-video` and its dependencies:
+Ensuite on installe pyannote-vidéo et ses dépendances :
 
 ```bash
 $ pip install pyannote-video
 ```
-
-Finally, download sample video and `dlib` models:
 
 ```bash
 $ git clone https://github.com/pyannote/pyannote-data.git
 $ git clone https://github.com/davisking/dlib-models.git
 $ bunzip2 dlib-models/dlib_face_recognition_resnet_model_v1.dat.bz2
 $ bunzip2 dlib-models/shape_predictor_68_face_landmarks.dat.bz2
-```
-
-To execute this notebook locally:
-```bash
-$ git clone https://github.com/pyannote/pyannote-video.git
-$ jupyter notebook --notebook-dir="pyannote-video/doc"
 ```
 
