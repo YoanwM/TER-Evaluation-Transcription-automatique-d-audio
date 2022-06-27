@@ -4,10 +4,10 @@ from pytube import YouTube
 import subprocess
 import os
 import re
+import unicodedata
 
 
-
-
+#Download a youtube video using it url
 def download_video(url:str):
     if url.startswith('https://www.youtube.com/watch?v=') :
         yt = yt = YouTube(url)
@@ -15,6 +15,7 @@ def download_video(url:str):
         raise SyntaxError("The link should start with https://www.youtube.com/watch?v=")
     return yt
 
+# Download many videos using a file or giving urls
 def download_videos(filename_path:str = None, urls = []) :
     if filename_path != None :
         filein = open(filename_path, "r")
@@ -25,11 +26,15 @@ def download_videos(filename_path:str = None, urls = []) :
         videos.append(download_video(url))
     return videos
 
+#
 def video_to_audio(video_name:str):
-
+    """
+    A function to extract an audio file from a video
+    :param video_name: str, nom de la video
+    """
     extension = ".mp3"
-    video_path = "./videos/"+video_name+"/"+video_name
-    output =  "./videos/"+video_name+v.title+extension
+    video_path = "./videos/"+video_name+"/"+video_name+".mp4"
+    output =  "./videos/"+video_name+video_name+extension
     cmd = "ffmpeg -i \""+video_path+"\" -vn -ab 16k \""+output+"\""
     os.system(cmd)
 
@@ -52,8 +57,28 @@ def video_to_audio(video_name:str):
     cmd = "rm \""+soundpath+"\""
     os.system(cmd)
 
+def remove_accents(input_str):
+    """
+    remove_accents removes accents from an str
+    :param input_str: str
+    :return: str
+    """
+    nkfd_form = unicodedata.normalize('NFKD', input_str)
+    return u"".join([c for c in nkfd_form if not unicodedata.combining(c)])
 
-
+def reTitle (title:str):
+    """
+    reTitle renames a title removing accents
+    :param title: str
+    :return: str
+    """
+    newTitle = ''
+    for c in title :
+        if c == ' ' :
+            c = '_'
+        newTitle += c
+    newTitle = remove_accents(newTitle)
+    return newTitle
 
 
 if __name__ == '__main__':
@@ -66,13 +91,14 @@ if __name__ == '__main__':
     else :
         videos = download_videos(filename_path='./youtube_videos/urls')
     for v in videos :
+        title = reTitle(v.title)
         st_query = v.streams
-        st_query.get_highest_resolution().download(output_path='./videos/'+v.title,filename=v.title)
+        st_query.get_highest_resolution().download(output_path='./videos/'+title,filename=title+".mp4")
         if not(os.listdir("./").__contains__("audios")):
             os.mkdir("./audios")
-        if not(os.listdir("./audios").__contains__(v.title)):
-            os.mkdir("./audios/"+v.title)
-        video_to_audio(v.title)
+        if not(os.listdir("./audios").__contains__(title)):
+            os.mkdir("./audios/"+title)
+        video_to_audio(title)
 
 
 
