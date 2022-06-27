@@ -1,45 +1,45 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 31 19:34:08 2022
+Created on Tue Jun  7 15:41:22 2022
 
 @author: danyn
 """
 
-#représentation graphique du score de confiance en fonction du mot, temps, spk
-
 import matplotlib.pyplot as plt
+
 import numpy as np
 import json
 import sys
-#import pandas as pd
-from matplotlib import rcParams
-#from operator import itemgetter
-
-
 
 #1 argument = le nom du fichier de transcription au format json
 if len( sys.argv ) != 2:
     print( "\tusage: %s <transcrit.json>" % sys.argv[0] )
     sys.exit()
 
+nomfichier = sys.argv[1]
+#representation courbe de confience des mots transcrits par paty 
 #extraction des informations du fichier json de transcription par paty
 #exemple avec VITISPROHIBITAEXTRAIT4_asr_reco.json
-nomfichier = sys.argv[1]
+
 with open(nomfichier) as json_data:
     data_dict = json.load(json_data)
 confidenceMoy = data_dict["confidence-score"]
 words = data_dict["speakers"]
+confSpk = []
 data = [] #stock les data
 for i in range(0, len(words)):
+    temp = []
     for j in range(len(words[i]["words"])):
         words[i]["words"][j]["speaker"] = "spk" + str(i)
         data.append(words[i]["words"][j])
-        
-
+        temp.append(words[i]["words"][j]["conf"])
+    confSpk.append(temp)
+    
 #mettre en ordre chronologique croissant par key "start" 
 sortedtime = sorted(data, key=lambda d: d['start'])
 
 listConf = []
+
 listWord = []
 listTime = []
 abscisse = []
@@ -61,44 +61,32 @@ npAbscisse = np.array(abscisse)
 npTime = np.array(listTime)
 npT = np.array(listT)
 
+dimx = len(npConf) * 0.17
+dimy = 10
+plt.figure(figsize=(dimx, dimy))
+plt.title("score de confiance en fonction chronologique des mots trancrits par Paty")
+plt.plot(npConf)
+plt.ylim(0,1.1)
+plt.xlim(1,len(npConf)+1)
+plt.xticks(range(len(npWord)), npWord, rotation = 90)
+plt.show()
 
-print("Fichier transcrit : " + nomfichier )
-print("Score de confience moyen : " + str(confidenceMoy))
-print("Affichage confiance en fonction des mots transcrits :")
+#affichage histogramme (nb de score en tranche seuil de 0.1)
+plt.hist(npConf, range= (0, 1), bins = 10, edgecolor = 'red')
+plt.title("Répartition du nombre de score de confiance total")
+histox = 15
+histoy = 10
+plt.xlim(0,1)
+abx = np.arange(0, 1.1, 0.1)
+plt.xticks(abx)
+plt.show()
 
-
-###plot du graphe mise en forme grace au 3 list
-
-#nb de mot par sous graphe
-N = 8
-
-rcParams.update({'figure.autolayout': True})
-plt.figure(figsize=(2,18), dpi=800)
-    
-#division des list en sous list pour plot
-sublists_Abs = [npAbscisse[x:x+N] for x in range(0, len(npAbscisse), N)]
-sublists_Conf = [npConf[x:x+N] for x in range(0, len(npConf), N)]
-
-size = int(len(npConf))
-fig, axs = plt.subplots(nrows=size//N+1, sharey=True, figsize=(14,50), dpi=150)
-#fig.suptitle('Score de confience en fonction du mot transcrit', size = 25)
-
-for ax, names, values in zip(axs, sublists_Abs, sublists_Conf):
-    bar_plot = ax.bar(names, values, align ='center')
-    ax.set_xlabel('time(s) \n spk Word')
-    ax.set_ylabel('Confidence score')
-    ax.set_xticks(range(len(names)))
-    ax.set_xticklabels(names, rotation='horizontal')
-    ax.set_xlim(-1, len(names))
-    ###ajout score dans les barres
-    for idx,rect in enumerate(bar_plot):
-        height = rect.get_height()
-        ax.text(rect.get_x() + rect.get_width()/2., 0.5*height, values[idx], ha='center', va='bottom', rotation=0)
-
-
-
-
-
-
-
-
+for i in range(len(confSpk)):
+    plt.hist(confSpk[i], range= (0, 1), bins = 10, edgecolor = 'red')
+    plt.title("Répartition du nombre de score de confiance du spk" + str(i))
+    histox = 15
+    histoy = 10
+    plt.xlim(0,1)
+    abx = np.arange(0, 1.1, 0.1)
+    plt.xticks(abx)
+    plt.show()
