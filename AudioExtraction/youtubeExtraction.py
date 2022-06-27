@@ -74,8 +74,14 @@ def reTitle (title:str):
     """
     newTitle = ''
     for c in title :
+<<<<<<< HEAD
         if c == ' ' :
             c = '_'
+=======
+        if c == ' ' or c == ':':
+            c = '_'
+
+>>>>>>> 4500967 (Extraction update)
         newTitle += c
     newTitle = remove_accents(newTitle)
     return newTitle
