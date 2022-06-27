@@ -4,9 +4,18 @@ Ce projet supervisé par Isabelle Ferrané, et réalisé par Dany Neang, Julian 
 
 
 ## Extraction automatique 
+Pour commencer, il faut utiliser le bon environement :
+
+```
+$ conda create -n extraction python=3.6
+$ source activate pyBK
+$ conda install pytube
+```
+
 
 Afin de réaliser la trancscription automatique, il faut lancer la ligne de commande suivante : 
-```$ python3 ./AudioExtraction/youtubeExtraction.py [URLS]
+```
+$ python3 ./AudioExtraction/youtubeExtraction.py [URLS]
 ```
 - URLS est une option permettant de lister une ou plusieurs urls de vidéos youtube d'où la vidéos sera extraite 
 - Si cette option n'est pas présente, l'extraction se fera à l'aide du fichier présent dans le fichier suivant : `./youtube_videos/urls`
@@ -43,4 +52,35 @@ Il suffit d'ajouter des fichiers au format .waw dans le dossier /audio pour les 
 texte resultats.txt. On peut déjà consulter celui qui a été push dans la version actuelle analysant les vidéos qui ont été données, la liste étant consultable
 dans le dossier /videos (certains ont été retirés du dossier pyBK/audio faute de taille).
 
+
+## Detection de visages
+
+La detection de visages dans les vidéos se fait à l'aide de pyannote-video.
+Pour l'utiliser, il faut d'abord se créer un bon environement (copier depuis pyannote video):
+
+```bash
+$ conda create -n pyannote python=3.6 anaconda
+$ source activate pyannote
+```
+
+Then, install `pyannote-video` and its dependencies:
+
+```bash
+$ pip install pyannote-video
+```
+
+Finally, download sample video and `dlib` models:
+
+```bash
+$ git clone https://github.com/pyannote/pyannote-data.git
+$ git clone https://github.com/davisking/dlib-models.git
+$ bunzip2 dlib-models/dlib_face_recognition_resnet_model_v1.dat.bz2
+$ bunzip2 dlib-models/shape_predictor_68_face_landmarks.dat.bz2
+```
+
+To execute this notebook locally:
+```bash
+$ git clone https://github.com/pyannote/pyannote-video.git
+$ jupyter notebook --notebook-dir="pyannote-video/doc"
+```
 
