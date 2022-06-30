@@ -6,10 +6,17 @@ Created on Tue Jun  7 15:41:22 2022
 """
 
 import matplotlib.pyplot as plt
-
+from matplotlib.pyplot import figure
+from matplotlib.ticker import PercentFormatter
 import numpy as np
 import json
 import sys
+from matplotlib import rcParams
+import subprocess as proc
+import os
+import shutil
+import IPython.display as aud
+import glob as g
 
 #1 argument = le nom du fichier de transcription au format json
 if len( sys.argv ) != 2:
