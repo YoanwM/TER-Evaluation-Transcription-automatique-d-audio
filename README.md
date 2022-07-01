@@ -55,7 +55,7 @@ Il suffit d'ajouter des fichiers au format .waw dans le dossier /audio pour les 
 texte resultats.txt. On peut déjà consulter celui qui a été push dans la version actuelle analysant les vidéos qui ont été données, la liste étant consultable
 dans le dossier /videos (certains ont été retirés du dossier pyBK/audio faute de taille).
 
-### PyAnnote
+### PyAnnote [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oBjSFLJx7uAwPvKcHa_BhcfDHQsfqXLU#scrollTo=QFYlg4ycNHLp&uniqifier=4)
 
 PyAnnote audio est, comme PyBK, un outil open-source de diarization cette fois développé par Hervé BREDIN de l'équipe SAMOVA de l'IRIT.
 
