@@ -24,10 +24,13 @@ L'extraction se fait en deux étapes :
 - Le téléchargement de(s) video(s) youtube dans le dossier `./videos/nom_de_la_video/la_video`
 - L'extraction de l'audio en .wav de ces videos dans le dossier `./audios/nom_de_la_video/l'audio`
 
-## PyBK
+## Diarization
 
-PyBK est un système de diarization sur une liste d'audios donnée, développé par Jose PATINO. Ici, on cherchera principalement à comparer PyBK et PATY quant à la
-segmentation et au clustering des locuteurs dans diverses vidéos.
+Ici, on cherchera principalement à comparer PyBK et PyAnnote quant à la segmentation et au clustering des locuteurs dans diverses vidéos.
+
+### PyBK
+
+PyBK est un système de diarization sur une liste d'audios donnée, développé par Jose PATINO.
 
 Pour l'utiliser, il faut tout d'abord avoir les bons outils et préparer le bon environnement. Si vous utilisez conda, les commandes suivantes devraient suffire :
 
@@ -51,6 +54,15 @@ $ python main.py
 Il suffit d'ajouter des fichiers au format .waw dans le dossier /audio pour les analyser, le résultat de l'analyse sera automatiquement retranscrite dans le fichier
 texte resultats.txt. On peut déjà consulter celui qui a été push dans la version actuelle analysant les vidéos qui ont été données, la liste étant consultable
 dans le dossier /videos (certains ont été retirés du dossier pyBK/audio faute de taille).
+
+### PyAnnote
+
+PyAnnote audio est, comme PyBK, un outil open-source de diarization cette fois développé par Hervé BREDIN de l'équipe SAMOVA de l'IRIT.
+
+Tout est indiqué dans [ce notebook](https://colab.research.google.com/drive/1oBjSFLJx7uAwPvKcHa_BhcfDHQsfqXLU#scrollTo=QFYlg4ycNHLp&uniqifier=4) sur Google Colab. 
+Pour faire de la diarization sur vos propres vidéos afin d'essayer par vous même, il suffit tout d'abord de lancer la cellule d'installation, de lancer ensuite 
+la cellule de la rubrique "Téléchargement de vos vidéos" qui vous permettra de choisir votre fichier audio au format .wav, puis de lancer
+la dernière cellule du notebook appelée "Diarization de votre vidéo".
 
 
 ## Detection de visages
