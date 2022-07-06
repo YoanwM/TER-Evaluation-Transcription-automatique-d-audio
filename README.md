@@ -13,16 +13,16 @@ $ conda install pytube
 ```
 
 
-Afin de réaliser la trancscription automatique, il faut lancer la ligne de commande suivante : 
+Afin de réaliser la transcription automatique, il faut lancer la ligne de commande suivante : 
 ```
 $ python3 ./AudioExtraction/youtubeExtraction.py [URLS]
 ```
-- URLS est une option permettant de lister une ou plusieurs urls de vidéos youtube d'où la vidéos sera extraite 
+- URLS est une option permettant de lister une ou plusieurs urls de vidéos youtube d'où la vidéos sera extraite. Pour rajouter une vidéo à la liste, il suffit de rajouter son url youtube à la liste et ensuite de lancer le script.
 - Si cette option n'est pas présente, l'extraction se fera à l'aide du fichier présent dans le fichier suivant : `./youtube_videos/urls`
 
 L'extraction se fait en deux étapes : 
 - Le téléchargement de(s) video(s) youtube dans le dossier `./videos/nom_de_la_video/la_video`
-- L'extraction de l'audio en .wav de ces videos dans le dossier `./audios/nom_de_la_video/l'audio`
+- L'extraction de l'audio en .wav de ces videos dans le dossier `./audios/nom_de_la_video/l'audio` 
 
 ## Diarization
 
