@@ -15,7 +15,7 @@ def download_video(url:str):
         raise SyntaxError("The link should start with https://www.youtube.com/watch?v=")
     return yt
 
-# Download many videos using a file or giving urls
+# Download many videos to a list using a file or giving urls
 def download_videos(filename_path:str = None, urls = []) :
     if filename_path != None :
         filein = open(filename_path, "r")
@@ -74,14 +74,9 @@ def reTitle (title:str):
     """
     newTitle = ''
     for c in title :
-<<<<<<< HEAD
-        if c == ' ' :
-            c = '_'
-=======
         if c == ' ' or c == ':':
             c = '_'
 
->>>>>>> 4500967 (Extraction update)
         newTitle += c
     newTitle = remove_accents(newTitle)
     return newTitle
@@ -96,6 +91,8 @@ if __name__ == '__main__':
         videos = download_videos(urls)
     else :
         videos = download_videos(filename_path='./youtube_videos/urls')
+    if not(os.listdir('./faceDetection').__contains__('datas')):
+        os.mkdir("./faceDetection/datas")
     for v in videos :
         title = reTitle(v.title)
         st_query = v.streams
@@ -104,22 +101,12 @@ if __name__ == '__main__':
             os.mkdir("./audios")
         if not(os.listdir("./audios").__contains__(title)):
             os.mkdir("./audios/"+title)
-        video_to_audio(title)
+        if not (os.listdir("./faceDetection/datas").__contains__(title)):
+            os.mkdir("./faceDetection/datas/" + title)
+        if not(os.path.exists('./audios/'+title+'/'+title+'.wav')):
+            video_to_audio(title)
 
 
 
-
-
-
-
-
-
-
-
-
-        """
-        vCaption = v.captions['a.fr']
-        print(vCaption.download(title = v.title,srt=True))
-        """
 
 
