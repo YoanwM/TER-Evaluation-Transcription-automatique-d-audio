@@ -1,54 +1,76 @@
-
-
-"""
-Before using this python script, be sure to be in a correct environment
-You can create one like this :
-$ conda create -n pyannote python=3.6 anaconda
-$ source activate pyannote
-
-Then, install pyannote-video and its dependencies:
-
-$ pip install pyannote-video
-
-Finally, download sample video and dlib models:
-
-$ git clone https://github.com/pyannote/pyannote-data.git
-$ git clone https://github.com/davisking/dlib-models.git
-$ bunzip2 dlib-models/dlib_face_recognition_resnet_model_v1.dat.bz2
-$ bunzip2 dlib-models/shape_predictor_68_face_landmarks.dat.bz2
-
-
-To run this script, you need to be in the main directory using :
-$ python3 ./faceDetection/faceDetection.py
-
-"""
-import os
-from pyannote.core.json import load_from
-from pyannote.core.notebook import repr_timeline
+# import the necessary packages
+from imutils.video import VideoStream
+import numpy as np
+import argparse
+import imutils
+import time
 import cv2
 
-if __name__ == '__main__':
+# construct the argument parse and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-p", "--prototxt", required=True,
+	help="path to Caffe 'deploy' prototxt file")
+ap.add_argument("-m", "--model", required=True,
+	help="path to Caffe pre-trained model")
+ap.add_argument("-c", "--confidence", type=float, default=0.5,
+	help="minimum probability to filter weak detections")
+args = vars(ap.parse_args())
 
-    titles = os.listdir('./faceDetection/datas')
-    for title in titles :
+# load our serialized model from disk
+print("[INFO] loading model...")
+net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 
-        # Here we make a path to the different files to make and use
-        dir_path = "./faceDetection/datas/" + title + "/"
-        shots_extension = ".shots.json"
-        track_extension = ".track.txt"
-        video_track_extension = ".track.mp4"
-        landmark_extension = ".landmarks.txt"
-        embedding_extension = ".embedding.txt"
+# initialize the video stream and allow the camera sensor to warm up
+print("[INFO] starting video stream...")
+vs = VideoStream(src=0).start()
+time.sleep(2.0)
 
-        video_path = "\"./videos/" + title + "/" + title + ".mp4\""
+# loop over the frames from the video stream
+while True:
+    # grab the frame from the threaded video stream and resize it
+    # to have a maximum width of 400 pixels
+    frame = vs.read()
+    frame = imutils.resize(frame, width=400)
 
-        shots_path = dir_path + title + shots_extension + "\""
-        track_path = dir_path + title + track_extension
-        video_track_path = dir_path + title + video_track_extension
-        landmark_path = dir_path + title + landmark_extension
-        embedding_path = dir_path + title + embedding_extension
+    # grab the frame dimensions and convert it to a blob
+    (h, w) = frame.shape[:2]
+    blob = cv2.dnn.blobFromImage(cv2.resize(frame, (300, 300)), 1.0,
+                                 (300, 300), (104.0, 177.0, 123.0))
 
-        # In this part we make the shot segmentation
+    # pass the blob through the network and obtain the detections and
+    # predictions
+    net.setInput(blob)
+    detections = net.forward()
 
-        os.system("pyannote-structure.py shot --verbose \$video_path \$shots_path")
-        shots = load_from(shots_path)
+    # loop over the detections
+    for i in range(0, detections.shape[2]):
+        # extract the confidence (i.e., probability) associated with the
+        # prediction
+        confidence = detections[0, 0, i, 2]
+        # filter out weak detections by ensuring the `confidence` is
+        # greater than the minimum confidence
+        if confidence < args["confidence"]:
+            continue
+        # compute the (x, y)-coordinates of the bounding box for the
+        # object
+        box = detections[0, 0, i, 3:7] * np.array([w, h, w, h])
+        (startX, startY, endX, endY) = box.astype("int")
+
+        # draw the bounding box of the face along with the associated
+        # probability
+        text = "{:.2f}%".format(confidence * 100)
+        y = startY - 10 if startY - 10 > 10 else startY + 10
+        cv2.rectangle(frame, (startX, startY), (endX, endY),
+                      (0, 0, 255), 2)
+        cv2.putText(frame, text, (startX, y),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
+        # show the output frame
+        cv2.imshow("Frame", frame)
+        key = cv2.waitKey(1) & 0xFF
+
+        # if the `q` key was pressed, break from the loop
+        if key == ord("q"):
+            break
+    # do a bit of cleanup
+    cv2.destroyAllWindows()
+    vs.stop()
