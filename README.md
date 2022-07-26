@@ -62,13 +62,13 @@ Il ne reste qu'a exécuter le programme analysePaty.py.
 Format d'exécution en fonction de 3 options possibles:
 
 -Option 1 :  
-python3 <option = 1, 2 ou 3> <transcrition.json> <audioname.wav> <seuil (0.0 to 0.9)>.
+python3 <option = 1> <transcrition.json> <audioname.wav> <seuil (0.0 to 0.9)>.
 
 Montre un graphique de score de confiance en fonction des mots transcrits. 
 Prépare des extraits à écouter (dans le dossier "odd_words") qui se focus sur les mots dont le score de confiances est en dessous du seuil.
 
 -Option 2 :
-python3 analysePaty.py <option = 3> <transcrit.json>
+python3 analysePaty.py <option = 3> <transcrition.json>
 
 Montre un histogramme de comparaison des speakers avec leurs scores de confiaces respectifs.
 Affichage histogramme tout speakers confondus (nb de score en tranche seuil de 0.1).
@@ -77,8 +77,7 @@ Pie : Taux de parole (nombre de mot dit) de chaque speaker.
 Histogramme de débit de parole.
 
 -Option 3 :
-
-python3 analysePaty.py <option = 3> <transcrit.json>
+python3 analysePaty.py <option = 3> <transcrit.json> <nbPerpl (5 to 30)>
 Representation 2d avec T-NSE des words embedding des mots transcrits.
 
 
