@@ -6,17 +6,17 @@ Created on Thu Jun 30 08:31:28 2022
 """
 
 import matplotlib.pyplot as plt
-from matplotlib.pyplot import figure
+#from matplotlib.pyplot import figure
 from matplotlib.ticker import PercentFormatter
 import numpy as np
 import json
 import sys
-from matplotlib import rcParams
+#from matplotlib import rcParams
 import subprocess as proc
 import os
 import shutil
-import IPython.display as aud
-import glob as g
+#import IPython.display as aud
+#import glob as g
 
 
 
@@ -24,7 +24,7 @@ import glob as g
 #extraction des informations du fichier json de transcription par paty
 
 #parameters
-if len( sys.argv ) not in [5, 3]:
+if len( sys.argv ) not in [5, 4, 3]:
     print( "\tusage: %s<option = 1, 2 ou 3> <transcrit.json> <audioname.wav> <seuil (0.0 to 0.9)>" % sys.argv[0] )
     sys.exit()
 
@@ -32,33 +32,36 @@ dossT = "patyTranscription/"
 
 
 nomfichier = dossT + sys.argv[2]
-audioName = sys.argv[3]
-
-dossA = "audios/" + audioName[:-4]
-nomaudio = dossA + "/" + audioName
 
 extrait_range = 2 #en seconde
 
 option = int(sys.argv[1])
 
+###début :cette partie créée des structures de tableau remplies par les données du fichier json
 with open(nomfichier) as json_data:
     data_dict = json.load(json_data)
 confidenceMoy = data_dict["confidence-score"]
 words = data_dict["speakers"]
-confSpk = []
-data = [] #stock les data
+confSpk = [] #tab conf de chaque speak ex avec 2 spk : [[0.2, 0.3], [0.6, 0.9, 0.7]]
+data = [] 
+nomspk = [] #tab temp qui sert à créer confSpk
 for i in range(0, len(words)):
-    temp = []
+    spk = words[i]["speaker_id"]
+    if spk not in nomspk:
+        nomspk.append(spk)
+        confSpk.append([])
     for j in range(len(words[i]["words"])):
-        words[i]["words"][j]["speaker"] = "spk" + str(i)
+        words[i]["words"][j]["speaker"] = words[i]["speaker_id"]
         data.append(words[i]["words"][j])
-        temp.append(words[i]["words"][j]["conf"])
-    confSpk.append(temp)
-    
-#mettre en ordre chronologique croissant par key "start" 
+
+for i in range(0, len(words)):
+    spk = words[i]["speaker_id"]
+    for j in range(len(words[i]["words"])):
+        confSpk[int(spk[-1]) - 1].append(words[i]["words"][j]["conf"])    
+
+#remettre en ordre chronologique croissant par key "start" 
 sortedtime = sorted(data, key=lambda d: d['start'])
 listConf = []
-
 listWord = []
 listTime = []
 abscisse = []
@@ -75,15 +78,22 @@ npWord = np.array(listWord)
 npAbscisse = np.array(abscisse)
 npTime = np.array(listTime)
 npT = np.array(listT)
+nbSpk = len(confSpk)
 
 dimx = len(npConf) * 0.1
 dimy = 10
+###Fin :cette partie créée des structures de tableau remplies par les données du fichier json
     
-print("il y a " + str(len(npWord)) + " mots.")
+print("nb word : " + str(len(npWord)))
+print("nb spk : " + str(nbSpk))
 
 #option 1
-#graphique de score de cofiance en fonction des mots transcrits
+#graphique de score de confiance en fonction des mots transcrits
 if option == 1:
+    audioName = sys.argv[3]
+    dossA = "audios/" + audioName[:-4]
+    nomaudio = dossA + "/" + audioName
+    print("nom audio = " + nomaudio)
     if len( sys.argv ) != 5:
         print( "\tusage: %s<option = 1> <transcrit.json> <audioname.wav> <seuil (0.0 to 0.9)>" % sys.argv[0] )
         sys.exit()
@@ -96,14 +106,9 @@ if option == 1:
     plt.xlim(1,len(npConf)+1)
     plt.xticks(range(len(npWord)), npWord, rotation = 90)
     plt.axhline(y=seuil, xmin=0, xmax=1, color = "red", label ="seuil")
-    #plt.annotate('seuil', xy = (0, seuil), xytext = (0, seuil))
     plt.show()
 
-#option 1
-    #display little audio extrait of speech under the "seuil"
-
-#conda install -c conda-forge ffmpeg    
-
+  
 #get all the word under seuil conf
     oddwords = []
     timers = [] #couple of time to get the timer extrait of oddword
@@ -133,7 +138,7 @@ if option == 1:
         #print(name)
         length = round(end - start,1)
         cmd = "ffmpeg -ss " + str(start) + " -t " + str(length) + " -i " +  "\"" + nomaudio + "\"" + " \"" + name + "\""
-        #print(cmd)
+        print(cmd)
         if proc.run(cmd, shell = True).returncode != 0:
             print("ffmpeg fail")
     print("...done \n check audios samples in folder " + tempdir)
@@ -181,15 +186,46 @@ if option == 2:
                )
     plt.title("Répartition du taux de parole entre les différents speakers")
     plt.legend(loc='upper left')
+    
+    #debit de parole en mots par minutes
+    #debit de "parole" de chaque speaker: mots/minute (moyen : 150mots/min pour être bien audible) 
+    #tabDebit : [(nbWord spk1, time total spk1),..., (nbWord spk n, time spk n) ...]
+    moyenDebit = 200
+    tabDebit = [round((len(words[i]["words"])) / (words[i]["end"] - words[i]["start"]) * 60) for i in range(nbSpk)]
+    spk = ["spk" + str(i) for i in range(nbSpk)]
+    fig = plt.figure(figsize=(nbSpk, 5))
+    ax = fig.add_axes([0,0,1,1])
+    ax.bar(spk, tabDebit)
+    plt.axhline(y=200, color = "green", label ="debit moyen général")
+    plt.legend()
+    plt.title("Debit de parole en mots par minutes de chaque speakers")
+    ax.set_ylabel("Mots/minutes")
+    plt.show()
 
 #option 3
 #word embedding représenation
 if option == 3:
-    if len(sys.argv) != 3:
-        print( "\tusage: %s<option = 3> <transcrit.json>" % sys.argv[0] )
+    if len(sys.argv) != 4:
+        print( "\tusage: %s<option = 3> <transcrit.json> <nb perplexity>" % sys.argv[0] )
         sys.exit()
     import spacy
     from sklearn.manifold import TSNE
+    
+    nbPerp = int(sys.argv[3])
+    
+    #╣you can add more if trouble
+    dictcolor = {"NOUN": "royalblue",
+             "ADJ" : "red",
+             "ADV" : "green",
+             "VERB": "pink",
+             "PROPN":"lightcyan",
+             "NUM": "tan",
+             "ADP":"maroon",
+             "AUX": "pink",
+             "CCONJ": "black",
+             "PRON": "yellow",
+             "X" :"cyan",
+             "PUNCT":"blue"}
     
     #building raw text
     def buildText(tabWord):
@@ -204,31 +240,76 @@ if option == 3:
     text = buildText(npWord)
     #python -m spacy download fr_core_news_sm
     #model français
-    nlp = spacy.load("fr_core_news_sm")
+    nlp = spacy.load("fr_core_news_lg")
     rawText = nlp(text)
     stemText = ""
-    print("texte brut :\n", rawText)
+    print("\n texte brut :\n", rawText)
     
     #traitement
     #remove stop_list + stemming (core word)
     stemText = nlp(buildText([str(token.lemma_) for token in rawText if not(token.is_stop or token.is_punct)]))
     stemText = nlp(buildText([str(token.lemma_) for token in stemText if not(token.is_stop or token.is_punct)]))
-    print("texte posttraitement :\n", stemText)  
+    print("\n texte posttraitement :\n", stemText, "\n")  
     
     #each token has a vector of word embedding
     word_emb = [word.vector for word in stemText]
     
-    #representation des words embeddings 2d
-    tsne2d = TSNE(n_components = 2, perplexity = 5, random_state = 0)
+    #representation des words embeddings 2d (all token)
+    tsne2d = TSNE(n_components = 2, perplexity = nbPerp, random_state = 0)
     tsne_word_emb2d = tsne2d.fit_transform(word_emb)
     x = tsne_word_emb2d[:,0]
     y = tsne_word_emb2d[:,1]
     plt.figure(figsize=(dimy, dimy))
-    for i, txt in enumerate(stemText):
-        plt.scatter(x[i], y[i], c = 'royalblue')
-        plt.text(x[i], (y[i]), str(txt))
+    for i, token in enumerate(stemText):
+        plt.scatter(x[i], y[i], c = dictcolor[token.pos_], label = token.pos_)
+        plt.text(x[i], (y[i]), str(token))
+        
+    handles, labels = plt.gca().get_legend_handles_labels()
+    by_label = dict(zip(labels, handles))
+    plt.legend(by_label.values(), by_label.keys())    
+    plt.title("Répresentation des words embeddings avec réduction de dimension par TNSE")
     plt.show()
     
+    #représentation des words embeddings 2d (nom token)
+    plt.figure(figsize=(dimy, dimy))
+    for i, token in enumerate(stemText):
+        if token.pos_ == "NOUN":
+            plt.scatter(x[i], y[i], c = dictcolor[token.pos_], label = token.pos_)
+            plt.text(x[i], (y[i]), str(token))
+            
+    handles, labels = plt.gca().get_legend_handles_labels()
+    by_label = dict(zip(labels, handles))
+    plt.legend(by_label.values(), by_label.keys())    
+    plt.title("Répresentation des words embeddings des NOMS avec réduction de dimension par TNSE")
+    plt.show()
+    
+    #représentation des words embeddings 2d (verbe token)
+    plt.figure(figsize=(dimy, dimy))
+    for i, token in enumerate(stemText):
+        if token.pos_ == "VERB":
+            plt.scatter(x[i], y[i], c = dictcolor[token.pos_], label = token.pos_)
+            plt.text(x[i], (y[i]), str(token))
+            
+    handles, labels = plt.gca().get_legend_handles_labels()
+    by_label = dict(zip(labels, handles))
+    plt.legend(by_label.values(), by_label.keys())    
+    plt.title("Répresentation des words embeddings des VERBS avec réduction de dimension par TNSE")
+    plt.show()
+    
+    #représentation des words embeddings 2d (adj token)
+    plt.figure(figsize=(dimy, dimy))
+    for i, token in enumerate(stemText):
+        if token.pos_ == "ADJ":
+            plt.scatter(x[i], y[i], c = dictcolor[token.pos_], label = token.pos_)
+            plt.text(x[i], (y[i]), str(token))
+            
+    handles, labels = plt.gca().get_legend_handles_labels()
+    by_label = dict(zip(labels, handles))
+    plt.legend(by_label.values(), by_label.keys())    
+    plt.title("Répresentation des words embeddings des ADJS avec réduction de dimension par TNSE")
+    plt.show()
+    
+    """
     #tentative en représentation 3d
     tsne3d = TSNE(n_components = 3, perplexity = 10, random_state = 0)
     tsne_word_emb3d = tsne3d.fit_transform(word_emb)
@@ -239,4 +320,4 @@ if option == 3:
     for x, y, z in tsne_word_emb3d:
         ax.scatter(x, y, z)
     plt.show()
-
+    """
