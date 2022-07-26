@@ -44,7 +44,7 @@ il vous fraudra les installer dans votre environnement voici les lignes d'instal
 
 ```
 $ conda install -c conda-forge spacy
-$ python -m spacy download fr_core_news_lg
+$ python -m spacy download fr_core_news_lg --user
 $ conda install -c conda-forge matplotlib
 $ conda install numpy
 $ conda install -c jmcmurray json
