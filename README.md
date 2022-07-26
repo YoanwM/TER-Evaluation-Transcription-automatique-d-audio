@@ -23,6 +23,64 @@ $ python3 ./AudioExtraction/youtubeExtraction.py [URLS]
 L'extraction se fait en deux étapes : 
 - Le téléchargement de(s) video(s) youtube dans le dossier `./videos/nom_de_la_video/la_video`
 - L'extraction de l'audio en .wav de ces videos dans le dossier `./audios/nom_de_la_video/l'audio` 
+- 
+## Transcription automatique audio avec PATY
+
+### Utilisation de PATY
+
+Cette partie se base sur les résultats des transcriptions de nos audios déjà préparés avec la rubrique précédente.
+Nous vous invitons à utiliser paty, développé par l'équipe SAMOVA, grâce à sa demo : https://paty.irit.fr/demo/.
+PATY est un outil de transription automatique de parole proposant ses services en se basant sur plusieurs model qui a servi à son apprentissage.
+
+Nous avons choisi le **model "abdel"**, un model avec le plus grand vocabulaire pour notre projet.
+
+Pour utiliser notre outil d'analyse de la transcription il vous faudra utiliser le **format de trancription avec json** ainsi que les options ***score de confiance et temps.***
+Une fois les transcriptions obtenues et placées manuellement dans le **dossier "patyTranscription"**, nous pouvons entamer les analyses.
+
+### Analyse des transcriptions
+#### Environnement et librairies
+Notre programme python "analysePaty.py" utilise certaines librairies : spacy (et son vocabulaire fr lg), matplotlib, json, sys, subprocess, os, shutil, glob et sklearn. 
+il vous fraudra les installer dans votre environnement voici les lignes d'installation avec anaconda (certains sont déjà installé par defaut):
+
+```
+$ conda install -c conda-forge spacy
+$ python -m spacy download fr_core_news_lg
+$ conda install -c conda-forge matplotlib
+$ conda install numpy
+$ conda install -c jmcmurray json
+$ conda install -c conda-forge r-sys
+& conda install -c omnia subprocess32
+$ conda install -c jmcmurray os
+$ conda install -c conda-forge pytest-shutil
+$ conda install -c conda-forge glob2
+$ conda install -c anaconda scikit-learn
+& conda install -c conda-forge ffmpeg   
+```
+
+#### Exécution de l'analyse
+Il ne reste qu'a exécuter le programme analysePaty.py. 
+Format d'exécution en fonction de 3 options possibles:
+
+-Option 1 :  
+python3 <option = 1, 2 ou 3> <transcrition.json> <audioname.wav> <seuil (0.0 to 0.9)>.
+
+Montre un graphique de score de confiance en fonction des mots transcrits. 
+Prépare des extraits à écouter (dans le dossier "odd_words") qui se focus sur les mots dont le score de confiances est en dessous du seuil.
+
+-Option 2 :
+python3 analysePaty.py <option = 3> <transcrit.json>
+
+Montre un histogramme de comparaison des speakers avec leurs scores de confiaces respectifs.
+Affichage histogramme tout speakers confondus (nb de score en tranche seuil de 0.1).
+Histogramme : Répartition du nombre de score de confiance des mots dans différent intervalle de chaque speaker.
+Pie : Taux de parole (nombre de mot dit) de chaque speaker.
+Histogramme de débit de parole.
+
+-Option 3 :
+
+python3 analysePaty.py <option = 3> <transcrit.json>
+Representation 2d avec T-NSE des words embedding des mots transcrits.
+
 
 ## Diarization
 
