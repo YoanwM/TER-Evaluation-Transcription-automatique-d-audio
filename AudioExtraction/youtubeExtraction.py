@@ -1,7 +1,6 @@
 import sys
 
 from pytube import YouTube
-import subprocess
 import os
 import re
 import unicodedata
@@ -101,6 +100,12 @@ if __name__ == '__main__':
             os.mkdir("./audios")
         if not(os.listdir("./audios").__contains__(title)):
             os.mkdir("./audios/"+title)
+        if not (os.listdir("./objectDetection").__contains__(title)):
+            os.mkdir("./objectDetection/"+title)
+        if not (os.listdir("./objectDetection/"+title).__contains__("Results")):
+            os.mkdir("./objectDetection/"+title+"/Results")
+        if not (os.listdir("./objectDetection/"+title).__contains__("Images")):
+            os.mkdir("./objectDetection/"+title+"/Images")
         if not (os.listdir("./faceDetection/datas").__contains__(title)):
             os.mkdir("./faceDetection/datas/" + title)
         if not(os.path.exists('./audios/'+title+'/'+title+'.wav')):
