@@ -25,12 +25,14 @@ import shutil
 
 #parameters
 if len( sys.argv ) not in [5, 4, 3]:
-    print( "\tusage: %s<option = 1, 2 ou 3> <transcrit.json> <audioname.wav> <seuil (0.0 to 0.9)>" % sys.argv[0] )
+    print( "\tusage: %s<option = 1> <transcrit.json> <audioname.wav> <seuil (0.0 to 0.9)>" % sys.argv[0] )
+    print( "\tusage: %s<option = 2> <transcrit.json>" % sys.argv[0] )
+    print( "\tusage: %s<option = 3> <transcrit.json> <Perplexity (5 to 50)>" % sys.argv[0] )
     sys.exit()
 
+#note : no need to insert the full path directory of neither the audio or the transcription.
+
 dossT = "patyTranscription/"
-
-
 nomfichier = dossT + sys.argv[2]
 
 extrait_range = 2 #en seconde
@@ -38,6 +40,7 @@ extrait_range = 2 #en seconde
 option = int(sys.argv[1])
 
 ###début :cette partie créée des structures de tableau remplies par les données du fichier json
+#note : ne fonctionne qu'avec le format json de la transcription paty avec le model abdel option score confiance et temps
 with open(nomfichier) as json_data:
     data_dict = json.load(json_data)
 confidenceMoy = data_dict["confidence-score"]
@@ -45,15 +48,19 @@ words = data_dict["speakers"]
 confSpk = [] #tab conf de chaque speak ex avec 2 spk : [[0.2, 0.3], [0.6, 0.9, 0.7]]
 data = [] 
 nomspk = [] #tab temp qui sert à créer confSpk
+
+#parcours des dictionnaires dans words
 for i in range(0, len(words)):
+    #on mets en place un detecteur de locuteur dans nomspk
     spk = words[i]["speaker_id"]
     if spk not in nomspk:
         nomspk.append(spk)
         confSpk.append([])
     for j in range(len(words[i]["words"])):
+        #on remplie les tableaux
         words[i]["words"][j]["speaker"] = words[i]["speaker_id"]
         data.append(words[i]["words"][j])
-
+#construction du tableau confSpk
 for i in range(0, len(words)):
     spk = words[i]["speaker_id"]
     for j in range(len(words[i]["words"])):
@@ -66,6 +73,7 @@ listWord = []
 listTime = []
 abscisse = []
 listT = []
+#remplir les différents tableaux
 for i in range(len(sortedtime)):
     listConf.append(sortedtime[i]["conf"])
     listWord.append(sortedtime[i]["word"])
@@ -90,6 +98,7 @@ print("nb spk : " + str(nbSpk))
 #option 1
 #graphique de score de confiance en fonction des mots transcrits
 if option == 1:
+    #construction des variable pour le nom, dossier du fichier audio 
     audioName = sys.argv[3]
     dossA = "audios/" + audioName[:-4]
     nomaudio = dossA + "/" + audioName
@@ -102,15 +111,17 @@ if option == 1:
     plt.figure(figsize=(dimx, dimy))
     plt.title("score de confiance en fonction chronologique des mots trancrits par Paty")
     plt.plot(npConf)
+    #définir les limites des axe
     plt.ylim(0,1.1)
     plt.xlim(1,len(npConf)+1)
+    #mets les valeurs en abscisse en vertical poiur plus de lisibilité (90°) 
     plt.xticks(range(len(npWord)), npWord, rotation = 90)
     plt.axhline(y=seuil, xmin=0, xmax=1, color = "red", label ="seuil")
     plt.show()
 
   
 #get all the word under seuil conf
-    oddwords = []
+    oddwords = [] #store les mots en dessous du seuil et les <unk>
     timers = [] #couple of time to get the timer extrait of oddword
     oddspeakers = []
     for element in sortedtime:
@@ -123,11 +134,11 @@ if option == 1:
             oddspeakers.append( element["speaker"])
     #create all oddaudio
     oddw_folder = "odd_words"
-    if not(os.path.exists(oddw_folder)):
+    if not(os.path.exists(oddw_folder)): #creation du dossier
         os.mkdir("./" + oddw_folder)
-    tempdest = "odd_words_" + audioName[:-4]
+    tempdest = "odd_words_" + audioName[:-4] #:-4 enleve l'extension du fichier en string
     tempdir = oddw_folder + "/" + tempdest
-    if (os.path.exists(tempdir)):
+    if (os.path.exists(tempdir)): #supprime le dossier si déjà existant
         shutil.rmtree(tempdir) #remove in order to clean before
     os.mkdir(tempdir)
     #create temp file for each audio 
@@ -309,15 +320,3 @@ if option == 3:
     plt.title("Répresentation des words embeddings des ADJS avec réduction de dimension par TNSE")
     plt.show()
     
-    """
-    #tentative en représentation 3d
-    tsne3d = TSNE(n_components = 3, perplexity = 10, random_state = 0)
-    tsne_word_emb3d = tsne3d.fit_transform(word_emb)
-    
-    fig = plt.figure(figsize = (dimx, dimy))
-    ax = fig.add_subplot(projection='3d')
-    
-    for x, y, z in tsne_word_emb3d:
-        ax.scatter(x, y, z)
-    plt.show()
-    """
