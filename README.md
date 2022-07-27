@@ -29,18 +29,18 @@ L'extraction se fait en deux étapes :
 ### Utilisation de PATY
 
 Cette partie se base sur les résultats des transcriptions de nos audios déjà préparés avec la rubrique précédente.
-Nous vous invitons à utiliser paty, développé par l'équipe SAMOVA, grâce à sa demo : https://paty.irit.fr/demo/.
-PATY est un outil de transription automatique de parole proposant ses services en se basant sur plusieurs model qui a servi à son apprentissage.
+Nous vous invitons à utiliser paty, développé par l'équipe SAMOVA, grâce à sa démo : https://paty.irit.fr/demo/.
+PATY est un outil de transcription automatique de parole proposant ses services en se basant sur plusieurs models qui a servi à son apprentissage.
 
 Nous avons choisi le **model "abdel"**, un model avec le plus grand vocabulaire pour notre projet.
 
-Pour utiliser notre outil d'analyse de la transcription il vous faudra utiliser le **format de trancription avec json** ainsi que les options ***score de confiance et temps.***
-Une fois les transcriptions obtenues et placées manuellement dans le **dossier "patyTranscription"**, nous pouvons entamer les analyses.
+Pour utiliser notre outil d'analyse de la transcription il vous faudra utiliser le **format de transcription avec json** ainsi que les options ***score de confiance et temps.***
+Une fois les transcriptions obtenues et placées manuellement dans le **dossier "/patyTranscription"**, nous pouvons entamer les analyses.
 
 ### Analyse des transcriptions
 #### Environnement et librairies
 Notre programme python "analysePaty.py" utilise certaines librairies : spacy (et son vocabulaire fr lg), matplotlib, json, sys, subprocess, os, shutil, glob et sklearn. 
-il vous fraudra les installer dans votre environnement voici les lignes d'installation avec anaconda (certains sont déjà installé par defaut):
+il vous fraudra les installer dans votre environnement voici les lignes d'installation avec anaconda (certaines sont déjà installées par défaut) :
 
 ```
 $ conda install -c conda-forge spacy
@@ -58,27 +58,27 @@ $ conda install -c anaconda scikit-learn
 ```
 
 #### Exécution de l'analyse
-Il ne reste qu'a exécuter le programme analysePaty.py. 
+Il ne reste qu'à exécuter le programme analysePaty.py. 
 Format d'exécution en fonction de 3 options possibles:
 
 -Option 1 :  
 python3 <option = 1> <transcrition.json> <audioname.wav> <seuil (0.0 to 0.9)>.
 
 Montre un graphique de score de confiance en fonction des mots transcrits. 
-Prépare des extraits à écouter (dans le dossier "odd_words") qui se focus sur les mots dont le score de confiances est en dessous du seuil.
+Prépare des extraits à écouter (dans le dossier "odd_words") qui se focus sur les mots dont le score de confiance est en dessous du seuil.
 
 -Option 2 :
 python3 analysePaty.py <option = 3> <transcrition.json>
 
-Montre un histogramme de comparaison des speakers avec leurs scores de confiaces respectifs.
-Affichage histogramme tout speakers confondus (nb de score en tranche seuil de 0.1).
-Histogramme : Répartition du nombre de score de confiance des mots dans différent intervalle de chaque speaker.
+Montre un histogramme de comparaison des speakers avec leurs scores de confiances respectifs.
+Affichage histogramme tous speakers confondus (nb de score en tranche seuil de 0.1).
+Histogramme : Répartition du nombre de score de confiance des mots dans différents intervalles de chaque speaker.
 Pie : Taux de parole (nombre de mot dit) de chaque speaker.
 Histogramme de débit de parole.
 
 -Option 3 :
 python3 analysePaty.py <option = 3> <transcrit.json> <nbPerpl (5 to 30)>
-Representation 2d avec T-NSE des words embedding des mots transcrits.
+Représentation 2d avec T-NSE des words embedding des mots transcrits.
 
 
 ## Diarization
