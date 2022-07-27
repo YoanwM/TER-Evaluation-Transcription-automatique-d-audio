@@ -4,7 +4,8 @@ Ce projet supervisé par Isabelle Ferrané, et réalisé par Dany Neang, Julian 
 
 
 ## Extraction automatique 
-Pour commencer, il faut utiliser le bon environement :
+Nous utilisons essentiellement anaconda pour gérer notre environnement de travail.
+Pour commencer, il faut utiliser le bon environement:
 
 ```
 $ conda create -n extraction python=3.6
@@ -30,7 +31,7 @@ L'extraction se fait en deux étapes :
 
 Cette partie se base sur les résultats des transcriptions de nos audios déjà préparés avec la rubrique précédente.
 Nous vous invitons à utiliser paty, développé par l'équipe SAMOVA, grâce à sa démo : https://paty.irit.fr/demo/.
-PATY est un outil de transcription automatique de parole proposant ses services en se basant sur plusieurs models qui a servi à son apprentissage.
+PATY est un outil de transcription automatique de parole proposant ses services en se basant sur plusieurs models qui ont servi à son apprentissage.
 
 Nous avons choisi le **model "abdel"**, un model avec le plus grand vocabulaire pour notre projet.
 
@@ -58,17 +59,17 @@ $ conda install -c anaconda scikit-learn
 ```
 
 #### Exécution de l'analyse
-Il ne reste qu'à exécuter le programme analysePaty.py. 
-Format d'exécution en fonction de 3 options possibles:
+Il ne reste qu'à exécuter le programme analysePaty.py. Il est conseillé d'utiliser Spyder pour des résultats plus lisibles.
+Il ne faut pas inserer tout le path directory du fichier de transcription et du fichier audio (trancription.json myaudio.wav suffit). Format d'exécution en fonction de 3 options possibles:
 
--Option 1 :  
-python3 <option = 1> <transcrition.json> <audioname.wav> <seuil (0.0 to 0.9)>.
+####Option 1 : Analyse du score de confiance des mots 
+Format : python3 <option = 1> <transcrition.json> <audioname.wav> <seuil (0.0 to 0.9)>.
 
 Montre un graphique de score de confiance en fonction des mots transcrits. 
 Prépare des extraits à écouter (dans le dossier "odd_words") qui se focus sur les mots dont le score de confiance est en dessous du seuil.
 
--Option 2 :
-python3 analysePaty.py <option = 3> <transcrition.json>
+####Option 2 : Analyse du score de confiance des locuteurs identifiés
+Format : python3 analysePaty.py <option = 3> <transcrition.json>
 
 Montre un histogramme de comparaison des speakers avec leurs scores de confiances respectifs.
 Affichage histogramme tous speakers confondus (nb de score en tranche seuil de 0.1).
@@ -76,8 +77,8 @@ Histogramme : Répartition du nombre de score de confiance des mots dans différ
 Pie : Taux de parole (nombre de mot dit) de chaque speaker.
 Histogramme de débit de parole.
 
--Option 3 :
-python3 analysePaty.py <option = 3> <transcrit.json> <nbPerpl (5 to 30)>
+####Option 3 : Word embedding 
+Format : python3 analysePaty.py <option = 3> <transcrit.json> <nbPerpl (5 to 30)>
 Représentation 2d avec T-NSE des words embedding des mots transcrits.
 
 
