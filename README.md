@@ -127,6 +127,8 @@ la dernière cellule du notebook appelée "Diarization de votre vidéo".
 
 ## Detection de visages
 
+### Avec pyannote : 
+
 La detection de visages dans les vidéos se fait à l'aide de pyannote-vidéo ou opencv (moins bien).
 Pour l'utiliser, il faut d'abord se créer un bon environement (copier depuis pyannote-vidéo):
 
@@ -150,6 +152,24 @@ $ bunzip2 dlib-models/shape_predictor_68_face_landmarks.dat.bz2
 
 Ensuite il faut lancer un des notebook situé dans le dossier `faceDetection` et se laisser guider.
 
+### Avec openCV (moins utile et performant) :
+
+Il faut commencer par se créer un bon environnement :
+
+```bash
+$ conda create -n faceDetection python=3.9 anaconda
+$ source activate faceDetection
+```
+
+Ensuite on installe opencv :
+
+```bash
+$ pip install opencv-python
+```
+
+Puis lancer le notebook et se laisser guider. 
+Les vidéos se chargeront directement dans le dossier courant.
+
 ## Detection d'objet
 
 La detection d'objet dans les vidéos se fait à l'aide de d'openCV et Yolo.
@@ -172,3 +192,4 @@ $ wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
 Ensuite il faut lancer un des notebook situé dans le dossier `objectDetection` et se laisser guider.
+Les images se téléchargeront directement dans nom_de_la_video/images et les résultats dans nom_de_la_video/results
