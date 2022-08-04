@@ -165,12 +165,10 @@ Ensuite on installe opencv :
 ```bash
 $ pip install opencv-python
 ```
+pour finir, téléchargez les yolo weights:
 
 ```bash
-$ git clone https://github.com/pyannote/pyannote-data.git
-$ git clone https://github.com/davisking/dlib-models.git
-$ bunzip2 dlib-models/dlib_face_recognition_resnet_model_v1.dat.bz2
-$ bunzip2 dlib-models/shape_predictor_68_face_landmarks.dat.bz2
+$ wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
 Ensuite il faut lancer un des notebook situé dans le dossier `objectDetection` et se laisser guider.
