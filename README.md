@@ -191,5 +191,17 @@ pour finir, téléchargez les yolo weights:
 $ wget https://pjreddie.com/media/files/yolov3.weights
 ```
 
-Ensuite il faut lancer un des notebook situé dans le dossier `objectDetection` et se laisser guider.
-Les images se téléchargeront directement dans nom_de_la_video/images et les résultats dans nom_de_la_video/results
+Pour utiliser la détection d'objet, il faut se placer dans le dossier `objectDetection`.
+
+Ensuite, il faut lancer le script python : 
+```bash
+$ python3 ./objectDetection --title Titre\_de\_la\_video [--frame_drop frame_drop]
+```
+
+L'argument frame_drop est optionnel (initialisé à 50 par défaut), et sert à traiter une images toutes les *frame\_drop*  images. 
+
+
+
+
+
+
