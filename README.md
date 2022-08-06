@@ -200,7 +200,7 @@ $ python3 ./objectDetection --title Titre_de_la_video [--frame_drop frame_drop]
 
 L'argument *frame_drop* est optionnel (initialisé à 50 par défaut), et sert à traiter une images toutes les *frame\_drop*  images. 
 
-
+Ce script télécharge d'abord les images dans le dossier `titre_de_la_video/Images`, enregistre les images traitées dans `titre_de_la_video/Results` et crée un fichier `titre_de_la_video.txt` contenant les informations sur les boites avec des lignes de la forme : `numéro_de_l'image label indice_de_confiance`.
 
 
 
