@@ -198,7 +198,7 @@ Ensuite, il faut lancer le script python :
 $ python3 ./objectDetection --title Titre_de_la_video [--frame_drop frame_drop]
 ```
 
-L'argument frame_drop est optionnel (initialisé à 50 par défaut), et sert à traiter une images toutes les *frame\_drop*  images. 
+L'argument *frame_drop* est optionnel (initialisé à 50 par défaut), et sert à traiter une images toutes les *frame\_drop*  images. 
 
 
 
