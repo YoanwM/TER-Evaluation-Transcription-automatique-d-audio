@@ -195,10 +195,11 @@ Pour utiliser la détection d'objet, il faut se placer dans le dossier `objectDe
 
 Ensuite, il faut lancer le script python : 
 ```bash
-$ python3 ./objectDetection --title Titre_de_la_video [--frame_drop frame_drop]
+$ python3 ./objectDetection --title Titre_de_la_video [--frame_drop frame_drop] [--confidence_min confidence_min]
 ```
 
 L'argument *frame_drop* est optionnel (initialisé à 50 par défaut), et sert à traiter une images toutes les *frame\_drop*  images. 
+L'argument *confidence_min* est optionnel (initialisé à 0.5 par défaut), et représente la confiance minimum pour afficher les boites sur les images.
 
 Ce script télécharge d'abord les images dans le dossier `titre_de_la_video/Images`, enregistre les images traitées dans `titre_de_la_video/Results` et crée un fichier `titre_de_la_video.txt` contenant les informations sur les boites avec des lignes de la forme : `numéro_de_l'image label indice_de_confiance`.
 
