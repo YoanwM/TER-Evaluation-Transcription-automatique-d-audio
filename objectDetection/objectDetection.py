@@ -6,6 +6,10 @@ import pathlib
 import os
 import argparse
 
+
+
+# Argument parsing
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--title', nargs=1, help='title of the video to process', required=True)
 parser.add_argument('--frame_drop', nargs=1, help='Images every frame drop will be processed', required=False, default=50)
@@ -15,16 +19,22 @@ title = args.title[0]
 frame_drop = args.frame_drop
 confidence_min = args.confidence_min[0]
 
+# Remove files and recreates directories
 os.system("rm -rf ./"+title)
 os.mkdir(title)
 os.mkdir("./"+title+"/Images")
 os.mkdir("./"+title+"/Results")
+
+# Making different path
 
 path = pathlib.Path().parent.absolute()
 video_path = str(path) + "/../videos/" + title + "/" + title + ".mp4"
 config_path = str(path) + "/yolov3.cfg"
 classes_path = str(path) + "/yolov3.txt"
 weights_path = str(path) + "/yolov3.weights"
+
+
+# Creating the images
 
 cap = cv.VideoCapture(video_path)
 i = 0
@@ -40,6 +50,9 @@ while True:
         break
     i = (i + 1) % frame_drop
 print("All images have been extracted")
+
+
+# Processing object detection
 
 WHITE = (255, 255, 255)
 img = None
