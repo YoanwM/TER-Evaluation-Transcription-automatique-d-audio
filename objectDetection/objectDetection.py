@@ -9,9 +9,11 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--title', nargs=1, help='title of the video to process', required=True)
 parser.add_argument('--frame_drop', nargs=1, help='Images every frame drop will be processed', required=False, default=50)
+parser.add_argument('--confidence_min', nargs=1, help='Images every frame drop will be processed', required=False, default=0.5, type=float)
 args = parser.parse_args()
 title = args.title[0]
 frame_drop = args.frame_drop
+confidence_min = args.confidence_min[0]
 
 os.system("rm -rf ./"+title)
 os.mkdir(title)
@@ -79,7 +81,7 @@ def load_image(path,num_img):
     # small objects (8112, 85)
     outputs = np.vstack(outputs)
 
-    post_process(img, outputs, 0.5, num_img)
+    post_process(img, outputs, confidence_min, num_img)
     cv.imshow('window', img)
     cv.displayOverlay('window', f'forward propagation time={t:.3}')
     cv.imwrite(title + "/Results/" + title + str(num_img) + ".jpg", img)
@@ -119,14 +121,14 @@ def post_process(img, outputs, conf, num_img):
             w = str(num_img) + " " + classes[classIDs[i]] + " " + str(confidences[i]) + "\n"
             file.write(w)
             text = "{}: {:.4f}".format(classes[classIDs[i]], confidences[i])
-            cv.putText(img, text, (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, 0.5, color, 1)
+            cv.putText(img, text, (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, confidence_min, color, 1)
     file.close()
 
 def trackbar(x):
     global img
     conf = x / 100
     img = img0.copy()
-    post_process(img, outputs, conf, 0)
+    post_process(img, outputs, confidence_min, 0)
     cv.displayOverlay('window', f'confidence level={conf}')
     cv.imshow('window', img)
 
