@@ -1,6 +1,6 @@
 # TER-Evaluation-Transcription-automatique-d-audio
 
-Ce projet supervisé par Isabelle Ferrané, et réalisé par Dany Neang, Julian Villeneuve et Yoan Mollet à pour but l'extraction automatique de l'audio à partir d'urls de vidéo youtube (de préférence traitant de l'oenologie) afin d'en analyser la transcription via l'outil PATY developper par l'équipe SAMOVA de l'IRIT. 
+Ce projet supervisé par Isabelle Ferrané, et réalisé par Dany Neang, Julian Villeneuve et Yoan Mollet à pour but l'extraction automatique de l'audio à partir d'urls de vidéo youtube (de préférence traitant de l'oenologie) afin d'en analyser la transcription via l'outil PATY developpé par l'équipe SAMOVA de l'IRIT. 
 
 
 ## Extraction automatique 
